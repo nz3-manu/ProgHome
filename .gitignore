@@ -1,7 +1,2 @@
-css
-eventos
-gulpfile.js
-node_modules
-npm-debug.log
-ACOE_ProgHome_Adv_v2.pdf
-package.json
+node_modules/
+.Ds_store
