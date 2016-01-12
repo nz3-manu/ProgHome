@@ -1,4 +1,7 @@
 /*nav */
 .container nav ul {
-  list-style: none;
-  float: right; }
+  float: left;
+  list-style: none; }
+  .container nav ul li {
+    float: right;
+    padding: 20px; }
