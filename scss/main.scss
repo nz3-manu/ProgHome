@@ -8,13 +8,13 @@ $colorPrimario:#0D4B72;
 }
 .container {
   width: 1000px;
-    nav .menu {
-      background-color: red;
+    nav.menu {
+      background-color: rgba(212, 128, 128, 0.72);
       width: 100%;
         ul {
           float: right;
           list-style: none;
-          background-color:black;
+          background-color:$colorPrimario;
           padding: 0px;
           margin: 0px;
             li {
@@ -32,23 +32,19 @@ $colorPrimario:#0D4B72;
           }
       }
     section {
-      .slogan {
+      &.slogan {
         width: 800px;
         background-color: blue;
-        .logo {
+        &.logo {
           width: 200px;
           float: left;
         }
-        .text {
+        &.text {
           width: 600px;
           background-color: red;
           float:right;
-          h3 {
-            color: $colorPrimario;
-          }
-          p {
-            color: $colorPrimario;
-          }
+          h3 { color: $colorPrimario; }
+          p { color: $colorPrimario; }
         }
       }
     }

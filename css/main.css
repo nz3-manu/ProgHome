@@ -7,37 +7,35 @@
 
 .container {
   width: 1000px; }
-  .container nav .menu {
-    background-color: red;
+  .container nav.menu {
+    background-color: rgba(212, 128, 128, 0.72);
     width: 100%; }
-    .container nav .menu ul {
+    .container nav.menu ul {
       float: right;
       list-style: none;
-      background-color: black;
+      background-color: #0D4B72;
       padding: 0px;
       margin: 0px; }
-      .container nav .menu ul li {
+      .container nav.menu ul li {
         float: left;
         padding: 20px; }
-        .container nav .menu ul li a {
+        .container nav.menu ul li a {
           text-decoration: none;
           color: #F8F8F8;
           line-height: 20px; }
-        .container nav .menu ul li jho
-span {
+        .container nav.menu ul li span {
           padding: 20px; }
-
-section .slogan {
-  width: 800px;
-  background-color: blue; }
-  section .slogan .logo {
-    width: 200px;
-    float: left; }
-  section .slogan .text {
-    width: 600px;
-    background-color: red;
-    float: right; }
-    section .slogan .text h3 {
-      color: #0D4B72; }
-    section .slogan .text p {
-      color: #0D4B72; }
+  .container section.slogan {
+    width: 800px;
+    background-color: blue; }
+    .container section.slogan.logo {
+      width: 200px;
+      float: left; }
+    .container section.slogan.text {
+      width: 600px;
+      background-color: red;
+      float: right; }
+      .container section.slogan.text h3 {
+        color: #0D4B72; }
+      .container section.slogan.text p {
+        color: #0D4B72; }
