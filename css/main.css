@@ -25,17 +25,23 @@
           line-height: 20px; }
         .container nav.menu ul li span {
           padding: 20px; }
-  .container section.slogan {
-    width: 800px;
-    background-color: blue; }
-    .container section.slogan.logo {
-      width: 200px;
+  .container section .slogan {
+    width: 600px;
+    background-color: blue;
+    height: 88px;
+    margin-top: 5px; }
+    .container section .slogan .logo {
+      width: 90px;
       float: left; }
-    .container section.slogan.text {
-      width: 600px;
+    .container section .slogan .text {
+      width: 510px;
       background-color: red;
-      float: right; }
-      .container section.slogan.text h3 {
-        color: #0D4B72; }
-      .container section.slogan.text p {
-        color: #0D4B72; }
+      float: right;
+      padding-left: 8px; }
+      .container section .slogan .text h3 {
+        color: #0D4B72;
+        margin-top: 0px; }
+      .container section .slogan .text p {
+        color: #0D4B72;
+        font-size: 12px;
+        margin-top: 25px; }

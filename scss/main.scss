@@ -32,19 +32,29 @@ $colorPrimario:#0D4B72;
           }
       }
     section {
-      &.slogan {
-        width: 800px;
+      .slogan {
+        width: 600px;
         background-color: blue;
-        &.logo {
-          width: 200px;
+        height: 88px;
+        margin-top: 5px;
+        .logo {
+          width: 90px;
           float: left;
         }
-        &.text {
-          width: 600px;
+        .text {
+          width: 510px;
           background-color: red;
           float:right;
-          h3 { color: $colorPrimario; }
-          p { color: $colorPrimario; }
+          padding-left: 8px;
+          h3 {
+            color: $colorPrimario;
+            margin-top: 0px;
+           }
+          p {
+            color: $colorPrimario;
+            font-size: 12px;
+            margin-top: 25px;
+           }
         }
       }
     }
