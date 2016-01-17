@@ -17,8 +17,9 @@ $colorTextoBotones: #F8F8F8;
   overflow: hidden;
 }
 .container {
-  width: 1000px;
+  width: 1024px;
   background-color: #F6F3E7;
+  padding-right: 24Px;
     nav.menu {
       background-color: #EED1AA;
       width: 100%;
@@ -30,7 +31,6 @@ $colorTextoBotones: #F8F8F8;
           margin: 0px;
             li {
               float:left;
-              padding: 20px;
                 a {
                   text-decoration: none;
                   color:$colorTextoBotones;
@@ -83,11 +83,17 @@ $colorTextoBotones: #F8F8F8;
       width: 5%;
       height: 50px;
       text-align:center;
-      color: #ffffff;
       font-size: 40px;
       background-color: $colorBotones;
-      border-radius: 25px 0px 0px 25px;
+      border-radius: 15px 0px 0px 15px;
       float: left;
+      &:hover{
+      background:radial-gradient(circle,#D16060,#C25050,#C25050);
+      }
+      a{
+        color: $colorTextoBotones;
+        text-decoration: none;
+      }
     }
     .contacInfor{
       width: 95%;
@@ -99,9 +105,10 @@ $colorTextoBotones: #F8F8F8;
       .program{
         width: 65%;
         float: left;
-        font-size: 20px;
+        font-size: 23px;
         p{
           margin: 0px;
+          }
         }
        }
        .searchInfor{
@@ -124,6 +131,7 @@ $colorTextoBotones: #F8F8F8;
       }
     }
     .highPlace{
+      height: 295px;
       baner.bannerContainer{
         width: 30%;
         height: 295px;
@@ -145,11 +153,31 @@ $colorTextoBotones: #F8F8F8;
         width: 70%;
         max-width: 700px;
         border-bottom-right-radius: 5px;
+        float:right;
+        position: relative;
         img{
-          border-bottom-right-radius: 5px;
+          border-bottom-right-radius: 16px;
+          width: 100%;
+          height: 295px;
+        }
+        .btnHighPlace{
+          width: 115PX;
+          height: 30px;
+          background-color: $colorBotones;
+          position: absolute;
+          text-align: center;
+          padding-top: 7px;
+          border: 1px solid $colorTextoBotones;
+          bottom: 25px;
+          left: 67px;
+          a{
+            text-decoration: none;
+            color:$colorTextoBotones;
+          }
         }
       }
-    }
+
+
 
 
 
