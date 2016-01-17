@@ -2,65 +2,79 @@
 * {
   box-sizing: border-box; }
 
-.scroll {
-  overflow: scroll; }
-
-.auto {
-  overflow: auto; }
-
 .clearFixed {
   overflow: hidden; }
 
-.container {
-  width: 1024px;
-  background-color: #F6F3E7;
-  padding-right: 24Px; }
-  .container nav.menu {
-    background-color: #EED1AA;
-    width: 100%; }
-    .container nav.menu ul {
+header {
+  background-color: #0D4B72;
+  width: 100%; }
+  header nav.menu {
+    width: 1024px;
+    margin: auto; }
+    header nav.menu .rightNav {
+      width: 30%;
+      background-color: #EFD2AB;
+      float: left;
+      height: 30px; }
+    header nav.menu ul {
+      width: 70%;
       float: right;
       list-style: none;
       background-color: #0D4B72;
       padding: 0px;
       margin: 0px; }
-      .container nav.menu ul li {
-        float: left; }
-        .container nav.menu ul li a {
+      header nav.menu ul li {
+        float: left;
+        padding-right: 10px;
+        border-right: 1px solid #F8F8F8; }
+        header nav.menu ul li a {
           text-decoration: none;
           color: #F8F8F8;
-          line-height: 20px; }
-        .container nav.menu ul li span {
+          line-height: 30px; }
+        header nav.menu ul li span {
           padding: 20px; }
-  .container section .slogan {
-    width: 600px;
+
+section {
+  background-color: #F6F3E7;
+  width: 100%;
+  padding: 10px 0px; }
+  section .lowHeader {
+    width: 1024px;
     height: 88px;
-    margin-top: 5px;
-    float: left; }
-    .container section .slogan .logo {
-      width: 90px;
+    margin: auto;
+    background-color: #F6F3E7; }
+    section .lowHeader .slogan {
+      width: 59%;
+      margin-top: 5px;
       float: left; }
-    .container section .slogan .text {
-      width: 510px;
+      section .lowHeader .slogan .logo {
+        width: 90px;
+        float: left; }
+      section .lowHeader .slogan .text {
+        width: 510px;
+        float: right;
+        padding-left: 8px; }
+        section .lowHeader .slogan .text h3 {
+          color: #0D4B72;
+          margin-top: 0px; }
+        section .lowHeader .slogan .text p {
+          color: #0D4B72;
+          font-size: 12px;
+          margin-top: 25px; }
+    section .lowHeader .search {
       float: right;
-      padding-left: 8px; }
-      .container section .slogan .text h3 {
-        color: #0D4B72;
-        margin-top: 0px; }
-      .container section .slogan .text p {
-        color: #0D4B72;
-        font-size: 12px;
-        margin-top: 25px; }
-  .container section .search {
-    float: right;
-    color: #0D4B72; }
-  .container .proName {
-    width: 100%;
+      color: #0D4B72; }
+
+nav.seconMenu {
+  width: 100%;
+  background-color: #C7CBDB; }
+  nav.seconMenu .proName {
+    width: 1024px;
     height: 50px;
-    margin: 10px 0px;
+    margin: auto;
     color: #0D4B72;
     border-bottom-right-radius: 20px; }
-    .container .proName .btn {
+    nav.seconMenu .proName .btn {
       width: 5%;
       height: 50px;
       text-align: center;
@@ -68,31 +82,31 @@
       background-color: #C34F4F;
       border-radius: 15px 0px 0px 15px;
       float: left; }
-      .container .proName .btn:hover {
+      nav.seconMenu .proName .btn:hover {
         background: radial-gradient(circle, #D16060, #C25050, #C25050); }
-      .container .proName .btn a {
+      nav.seconMenu .proName .btn a {
         color: #F8F8F8;
         text-decoration: none; }
-    .container .proName .contacInfor {
+    nav.seconMenu .proName .contacInfor {
       width: 95%;
       background-color: #C7CBDB;
       padding-top: 10px;
       float: right;
       padding: 14px 60px 0px 60px;
       height: 50px; }
-      .container .proName .contacInfor .program {
+      nav.seconMenu .proName .contacInfor .program {
         width: 65%;
         float: left;
         font-size: 23px; }
-        .container .proName .contacInfor .program p {
+        nav.seconMenu .proName .contacInfor .program p {
           margin: 0px; }
-    .container .proName .searchInfor {
+    nav.seconMenu .proName .searchInfor {
       width: 20%;
       float: right;
       border-radius: 3px;
       padding-top: 11px input;
         padding-top-width: 150px; }
-      .container .proName .searchInfor .btnSearch {
+      nav.seconMenu .proName .searchInfor .btnSearch {
         width: 20px;
         height: 22px;
         background-color: #C34F4F;
@@ -101,7 +115,11 @@
         text-align: center; }
 
 .highPlace {
-  height: 295px; }
+  width: 1024px;
+  height: 295px;
+  background-color: #F6F3E7;
+  padding-top: 15px;
+  margin: auto; }
   .highPlace baner.bannerContainer {
     width: 30%;
     height: 295px;

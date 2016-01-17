@@ -3,187 +3,198 @@ $colorPrimario: #0D4B72;
 $colorBotones: #C34F4F;
 $colorMenuContac: #C7CBDB;
 $colorTextoBotones: #F8F8F8;
-
+$colorFondo:#F6F3E7;
+$sizeWeb:1024px;
 *{
   box-sizing: border-box;
-}
-.scroll{
-  overflow: scroll
-}
-.auto{
-  overflow: auto
 }
 .clearFixed {
   overflow: hidden;
 }
-.container {
-  width: 1024px;
-  background-color: #F6F3E7;
-  padding-right: 24Px;
-    nav.menu {
-      background-color: #EED1AA;
-      width: 100%;
-        ul {
-          float: right;
-          list-style: none;
-          background-color:$colorPrimario;
-          padding: 0px;
-          margin: 0px;
-            li {
-              float:left;
-                a {
-                  text-decoration: none;
-                  color:$colorTextoBotones;
-                  line-height: 20px;
-                  }
-                span {
-                  padding: 20px;
-                }
-             }
-          }
-      }
-    section {
-      .slogan {
-        width: 600px;
-        height: 88px;
-        margin-top: 5px;
-        float: left;
-        .logo {
-          width: 90px;
-          float: left;
-        }
-        .text {
-          width: 510px;
-          float:right;
-          padding-left: 8px;
-          h3 {
-            color: $colorPrimario;
-            margin-top: 0px;
-           }
-          p {
-            color: $colorPrimario;
-            font-size: 12px;
-            margin-top: 25px;
-           }
-        }
-      }
-      .search{
-        float: right;
-        color: $colorPrimario;
-      }
-    }
-
-  .proName{
-    width: 100%;
-    height:50px;
-    margin: 10px 0px;
-    color:$colorPrimario;
-    border-bottom-right-radius: 20px;
-    .btn{
-      width: 5%;
-      height: 50px;
-      text-align:center;
-      font-size: 40px;
-      background-color: $colorBotones;
-      border-radius: 15px 0px 0px 15px;
+header{
+  background-color:$colorPrimario;
+  width: 100%;
+  nav.menu {
+    width: $sizeWeb;
+    margin: auto;
+    .rightNav{
+      width: 30%;
+      background-color: #EFD2AB;
       float: left;
-      &:hover{
-      background:radial-gradient(circle,#D16060,#C25050,#C25050);
-      }
-      a{
-        color: $colorTextoBotones;
-        text-decoration: none;
-      }
+      height: 30px;
     }
-    .contacInfor{
-      width: 95%;
-      background-color: $colorMenuContac;
-      padding-top: 10px;
-      float: right;
-      padding: 14px 60px 0px 60px;
-      height: 50px;
-      .program{
-        width: 65%;
-        float: left;
-        font-size: 23px;
-        p{
-          margin: 0px;
-          }
-        }
-       }
-       .searchInfor{
-        width: 20%;
+      ul {
+        width: 70%;
         float: right;
-        border-radius: 3px;
-        padding-top: 11px
-        input{
-            width: 150px;
-         }
-         .btnSearch {
-           width: 20px;
-           height:22px;
-           background-color:$colorBotones;
-           color:$colorTextoBotones;
-           float:right;
-           text-align: center;
-         }
-       }
-      }
-    }
-    .highPlace{
-      height: 295px;
-      baner.bannerContainer{
-        width: 30%;
-        height: 295px;
-        background-color: $colorPrimario;
+        list-style: none;
+        background-color:$colorPrimario;
         padding: 0px;
         margin: 0px;
+          li {
+            float:left;
+            padding-right: 10px;
+            border-right: 1px solid $colorTextoBotones;
+              a {
+                text-decoration: none;
+                color:$colorTextoBotones;
+                line-height: 30px;
+                }
+              span {
+                padding: 20px;
+              }
+           }
+        }
+    }
+}
+section {
+  background-color: $colorFondo;
+  width: 100%;
+  padding: 10px 0px;
+  .lowHeader{
+    width:$sizeWeb;
+    height: 88px;
+    margin: auto;
+    background-color: $colorFondo;
+    .slogan {
+      width: 59%;
+      margin-top: 5px;
+      float: left;
+      .logo {
+        width: 90px;
         float: left;
-        overflow: scroll;
-        box-shadow: 0px 0px 5px 5px #666666;
-          .banner1, .banner2, .banner3, .banner4, .banner5, .banner6 {
-            font-size: 20px;
-            background-color:$colorPrimario;
-            color:$colorTextoBotones;
-            padding: 13px 15px;
-            border-bottom: 1px solid $colorTextoBotones;
-        }
       }
-      .seconHigh{
-        width: 70%;
-        max-width: 700px;
-        border-bottom-right-radius: 5px;
+      .text {
+        width: 510px;
         float:right;
-        position: relative;
-        img{
-          border-bottom-right-radius: 16px;
-          width: 100%;
-          height: 295px;
-        }
-        .btnHighPlace{
-          width: 115PX;
-          height: 30px;
-          background-color: $colorBotones;
-          position: absolute;
-          text-align: center;
-          padding-top: 7px;
-          border: 1px solid $colorTextoBotones;
-          bottom: 25px;
-          left: 67px;
-          a{
-            text-decoration: none;
-            color:$colorTextoBotones;
-          }
+        padding-left: 8px;
+        h3 {
+          color: $colorPrimario;
+          margin-top: 0px;
+         }
+        p {
+          color: $colorPrimario;
+          font-size: 12px;
+          margin-top: 25px;
+         }
+      }
+    }
+    .search{
+      float: right;
+      color: $colorPrimario;
+    }
+  }
+}
+
+// NOTE: parte inferior
+nav.seconMenu{
+  width: 100%;
+  background-color: $colorMenuContac;
+  .proName{
+  width: $sizeWeb;
+  height:50px;
+  margin: auto;
+  color:$colorPrimario;
+  border-bottom-right-radius: 20px;
+  .btn{
+    width: 5%;
+    height: 50px;
+    text-align:center;
+    font-size: 40px;
+    background-color: $colorBotones;
+    border-radius: 15px 0px 0px 15px;
+    float: left;
+    &:hover{
+    background:radial-gradient(circle,#D16060,#C25050,#C25050);
+    }
+    a{
+      color: $colorTextoBotones;
+      text-decoration: none;
+    }
+  }
+  .contacInfor{
+    width: 95%;
+    background-color: $colorMenuContac;
+    padding-top: 10px;
+    float: right;
+    padding: 14px 60px 0px 60px;
+    height: 50px;
+    .program{
+      width: 65%;
+      float: left;
+      font-size: 23px;
+      p{
+        margin: 0px;
         }
       }
-
-
-
-
-
-}//container
-
-///
-///JSHint////
-///
-///
+     }
+     .searchInfor{
+      width: 20%;
+      float: right;
+      border-radius: 3px;
+      padding-top: 11px
+      input{
+          width: 150px;
+       }
+       .btnSearch {
+         width: 20px;
+         height:22px;
+         background-color:$colorBotones;
+         color:$colorTextoBotones;
+         float:right;
+         text-align: center;
+       }
+     }
+    }
+}
+// NOTE: parte alta
+.highPlace {
+  width: $sizeWeb;
+  height: 295px;
+  background-color: $colorFondo;
+  padding-top: 15px;
+  margin: auto;
+  baner.bannerContainer{
+    width: 30%;
+    height: 295px;
+    background-color: $colorPrimario;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    overflow: scroll;
+    box-shadow: 0px 0px 5px 5px #666666;
+      .banner1, .banner2, .banner3, .banner4, .banner5, .banner6 {
+        font-size: 20px;
+        background-color:$colorPrimario;
+        color:$colorTextoBotones;
+        padding: 13px 15px;
+        border-bottom: 1px solid $colorTextoBotones;
+    }
+  }
+  .seconHigh{
+    width: 70%;
+    max-width: 700px;
+    border-bottom-right-radius: 5px;
+    float:right;
+    position: relative;
+    img{
+      border-bottom-right-radius: 16px;
+      width: 100%;
+      height: 295px;
+    }
+    .btnHighPlace{
+      width: 115PX;
+      height: 30px;
+      background-color: $colorBotones;
+      position: absolute;
+      text-align: center;
+      padding-top: 7px;
+      border: 1px solid $colorTextoBotones;
+      bottom: 25px;
+      left: 67px;
+      a{
+        text-decoration: none;
+        color:$colorTextoBotones;
+      }
+    }
+  }
+}
