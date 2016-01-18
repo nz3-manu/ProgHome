@@ -83,7 +83,7 @@ nav.seconMenu {
       border-radius: 15px 0px 0px 15px;
       float: left; }
       nav.seconMenu .proName .btn:hover {
-        background: radial-gradient(circle, #D16060, #C25050, #C25050); }
+        background: radial-gradient(circle, #D16060, #D16060, #C25050); }
       nav.seconMenu .proName .btn a {
         color: #F8F8F8;
         text-decoration: none; }
@@ -113,6 +113,11 @@ nav.seconMenu {
         color: #F8F8F8;
         float: right;
         text-align: center; }
+        nav.seconMenu .proName .searchInfor .btnSearch:hover {
+          background: radial-gradient(circle, #D16060, #D16060, #C25050); }
+        nav.seconMenu .proName .searchInfor .btnSearch a {
+          text-decoration: none;
+          color: #F8F8F8; }
 
 .highPlace {
   width: 1024px;
@@ -133,7 +138,7 @@ nav.seconMenu {
       font-size: 20px;
       background-color: #0D4B72;
       color: #F8F8F8;
-      padding: 13px 15px;
+      padding: 16px 15px;
       border-bottom: 1px solid #F8F8F8; }
   .highPlace .seconHigh {
     width: 70%;
@@ -155,6 +160,84 @@ nav.seconMenu {
       border: 1px solid #F8F8F8;
       bottom: 25px;
       left: 67px; }
+      .highPlace .seconHigh .btnHighPlace:hover {
+        background: radial-gradient(circle, #D16060, #D16060, #C25050); }
       .highPlace .seconHigh .btnHighPlace a {
         text-decoration: none;
         color: #F8F8F8; }
+
+section.lowPlace {
+  width: 1024px;
+  margin: auto;
+  background-color: #F6F3E7;
+  padding-top: 40px;
+  height: 290px; }
+  section.lowPlace .seconLowPlace {
+    width: 100%;
+    /*.middle{
+      width: 32%;
+      height: 150px;
+      background-color: green;
+      float: left;
+      margin-right: 2%;
+      position: relative;
+      .withinMiddle{
+        width: 100%;
+        height: 100px;
+        background-color: #EFD2AB;
+        bottom: 0px;
+        position: absolute;
+        color:$colorPrimario;
+        p{
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }*/ }
+    section.lowPlace .seconLowPlace .left {
+      width: 32%;
+      height: 290px;
+      border-radius: 15px;
+      float: left;
+      margin-right: 2%; }
+    section.lowPlace .seconLowPlace .middle {
+      width: 32%;
+      height: 150px;
+      margin-right: 2%;
+      background-color: red;
+      float: left;
+      position: relative; }
+      section.lowPlace .seconLowPlace .middle .withinMiddle {
+        width: 100%;
+        height: 100px;
+        background-color: #EFD2AB;
+        bottom: -100px;
+        position: absolute;
+        color: #0D4B72; }
+        section.lowPlace .seconLowPlace .middle .withinMiddle p.text {
+          margin: 0px;
+          padding: 5px 10px;
+          border-bottom: 1px solid #F8F8F8; }
+        section.lowPlace .seconLowPlace .middle .withinMiddle .btnHighPlace {
+          width: 120PX;
+          height: 30px;
+          background-color: #C34F4F;
+          position: absolute;
+          text-align: center;
+          padding-top: 2px;
+          border: 1px solid #F8F8F8;
+          bottom: 5px;
+          right: 1px; }
+          section.lowPlace .seconLowPlace .middle .withinMiddle .btnHighPlace:hover {
+            background: radial-gradient(circle, #D16060, #D16060, #C25050); }
+          section.lowPlace .seconLowPlace .middle .withinMiddle .btnHighPlace p {
+            margin: 0px;
+            padding: 5px 10px; }
+          section.lowPlace .seconLowPlace .middle .withinMiddle .btnHighPlace a {
+            text-decoration: none;
+            color: #F8F8F8; }
+      section.lowPlace .seconLowPlace .middle img {
+        width: 100%; }

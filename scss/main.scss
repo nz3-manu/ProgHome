@@ -104,7 +104,7 @@ nav.seconMenu{
     border-radius: 15px 0px 0px 15px;
     float: left;
     &:hover{
-    background:radial-gradient(circle,#D16060,#C25050,#C25050);
+    background:radial-gradient(circle,#D16060,#D16060,#C25050);
     }
     a{
       color: $colorTextoBotones;
@@ -142,6 +142,13 @@ nav.seconMenu{
          color:$colorTextoBotones;
          float:right;
          text-align: center;
+         &:hover{
+          background:radial-gradient(circle,#D16060,#D16060,#C25050);
+         }
+         a{
+           text-decoration: none;
+           color: $colorTextoBotones;
+         }
        }
      }
     }
@@ -166,7 +173,7 @@ nav.seconMenu{
         font-size: 20px;
         background-color:$colorPrimario;
         color:$colorTextoBotones;
-        padding: 13px 15px;
+        padding: 16px 15px;
         border-bottom: 1px solid $colorTextoBotones;
     }
   }
@@ -191,10 +198,99 @@ nav.seconMenu{
       border: 1px solid $colorTextoBotones;
       bottom: 25px;
       left: 67px;
+      &:hover{
+        background:radial-gradient(circle,#D16060,#D16060,#C25050);
+      }
       a{
         text-decoration: none;
         color:$colorTextoBotones;
       }
     }
+  }
+}
+section.lowPlace{
+  width: $sizeWeb;
+  margin: auto;
+  background-color: $colorFondo;
+  padding-top: 40px;
+  height: 290px;
+  .seconLowPlace{
+    width: 100%;
+      .left{
+        width: 32%;
+        height: 290px;
+        border-radius: 15px;
+        float: left;
+        margin-right: 2%;
+      }
+      /*.middle{
+      width: 32%;
+      height: 150px;
+      background-color: green;
+      float: left;
+      margin-right: 2%;
+      position: relative;
+      .withinMiddle{
+        width: 100%;
+        height: 100px;
+        background-color: #EFD2AB;
+        bottom: 0px;
+        position: absolute;
+        color:$colorPrimario;
+        p{
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }*/
+      .middle{
+      width: 32%;
+      height: 150px;
+      margin-right: 2%;
+      background-color: red;
+      float: left;
+      position: relative;
+      .withinMiddle{
+        width: 100%;
+        height: 100px;
+        background-color: #EFD2AB;
+        bottom: -100px;
+        position: absolute;
+        color:$colorPrimario;
+        p.text{
+          margin: 0px;
+          padding: 5px 10px;
+          border-bottom: 1px solid $colorTextoBotones;
+        }
+        .btnHighPlace{
+          width: 120PX;
+          height: 30px;
+          background-color: $colorBotones;
+          position: absolute;
+          text-align: center;
+          padding-top: 2px;
+          border: 1px solid $colorTextoBotones;
+          bottom: 5px;
+          right: 1px;
+          &:hover{
+            background:radial-gradient(circle,#D16060,#D16060,#C25050);
+          }
+          p{
+            margin: 0px;
+            padding: 5px 10px;
+          }
+          a{
+            text-decoration: none;
+            color:$colorTextoBotones;
+          }
+        }
+      }
+      img{
+        width: 100%;
+      }
+      }
   }
 }
