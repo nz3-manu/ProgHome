@@ -1,89 +1,17 @@
-/*nav */
-$colorPrimario: #0D4B72;
-$colorBotones: #C34F4F;
-$colorMenuContac: #C7CBDB;
-$colorTextoBotones: #F8F8F8;
-$colorFondo:#F6F3E7;
-$sizeWeb:1024px;
+@import "_variables.scss";
+@import "_header.scss";
+@import "_section.scss";
+
+
+
 *{
   box-sizing: border-box;
 }
 .clearFixed {
   overflow: hidden;
 }
-header{
-  background-color:$colorPrimario;
-  width: 100%;
-  nav.menu {
-    width: $sizeWeb;
-    margin: auto;
-    .rightNav{
-      width: 30%;
-      background-color: #EFD2AB;
-      float: left;
-      height: 30px;
-    }
-      ul {
-        width: 70%;
-        float: right;
-        list-style: none;
-        background-color:$colorPrimario;
-        padding: 0px;
-        margin: 0px;
-          li {
-            float:left;
-            padding-right: 10px;
-            border-right: 1px solid $colorTextoBotones;
-              a {
-                text-decoration: none;
-                color:$colorTextoBotones;
-                line-height: 30px;
-                }
-              span {
-                padding: 20px;
-              }
-           }
-        }
-    }
-}
-section {
-  background-color: $colorFondo;
-  width: 100%;
-  padding: 10px 0px;
-  .lowHeader{
-    width:$sizeWeb;
-    height: 88px;
-    margin: auto;
-    background-color: $colorFondo;
-    .slogan {
-      width: 59%;
-      margin-top: 5px;
-      float: left;
-      .logo {
-        width: 90px;
-        float: left;
-      }
-      .text {
-        width: 510px;
-        float:right;
-        padding-left: 8px;
-        h3 {
-          color: $colorPrimario;
-          margin-top: 0px;
-         }
-        p {
-          color: $colorPrimario;
-          font-size: 12px;
-          margin-top: 25px;
-         }
-      }
-    }
-    .search{
-      float: right;
-      color: $colorPrimario;
-    }
-  }
-}
+
+
 
 // NOTE: parte inferior
 nav.seconMenu{

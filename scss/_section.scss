@@ -1,0 +1,38 @@
+section {
+  background-color: $colorFondo;
+  width: 100%;
+  padding: 10px 0px;
+  .lowHeader{
+    width:$sizeWeb;
+    height: 88px;
+    margin: auto;
+    background-color: $colorFondo;
+    .slogan {
+      width: 59%;
+      margin-top: 5px;
+      float: left;
+      .logo {
+        width: 90px;
+        float: left;
+      }
+      .text {
+        width: 510px;
+        float:right;
+        padding-left: 8px;
+        h3 {
+          color: $colorPrimario;
+          margin-top: 0px;
+         }
+        p {
+          color: $colorPrimario;
+          font-size: 12px;
+          margin-top: 25px;
+         }
+      }
+    }
+    .search{
+      float: right;
+      color: $colorPrimario;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+header{
+  background-color:$colorPrimario;
+  width: 100%;
+  nav.menu {
+    width: $sizeWeb;
+    margin: auto;
+    .rightNav{
+      width: 30%;
+      background-color: #EFD2AB;
+      float: left;
+      height: 30px;
+    }
+      ul {
+        width: 70%;
+        float: right;
+        list-style: none;
+        background-color:$colorPrimario;
+        padding: 0px;
+        margin: 0px;
+          li {
+            float:left;
+            padding-right: 10px;
+            border-right: 1px solid $colorTextoBotones;
+              a {
+                text-decoration: none;
+                color:$colorTextoBotones;
+                line-height: 30px;
+                }
+              span {
+                padding: 20px;
+              }
+           }
+        }
+    }
+}
