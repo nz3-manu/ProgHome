@@ -1,7 +1,9 @@
-section {
+//****** header logo y lema ******
+header.slogan {
   background-color: $colorFondo;
   width: 100%;
   padding: 10px 0px;
+  overflow: hidden;
   .lowHeader{
     width:$sizeWeb;
     height: 88px;

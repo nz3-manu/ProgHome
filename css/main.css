@@ -1,126 +1,69 @@
-header {
+* {
+  box-sizing: border-box; }
+
+.clearFixed {
+  overflow: hidden; }
+
+header.main-menu {
   background-color: #0D4B72;
   width: 100%; }
-  header nav.menu {
+  header.main-menu nav.menu {
     width: 1024px;
     margin: auto; }
-    header nav.menu .rightNav {
+    header.main-menu nav.menu .rightNav {
       width: 30%;
       background-color: #EFD2AB;
       float: left;
       height: 30px; }
-    header nav.menu ul {
+    header.main-menu nav.menu ul {
       width: 70%;
       float: right;
       list-style: none;
       background-color: #0D4B72;
       padding: 0px;
       margin: 0px; }
-      header nav.menu ul li {
+      header.main-menu nav.menu ul li {
         float: left;
         padding-right: 10px;
         border-right: 1px solid #F8F8F8; }
-        header nav.menu ul li a {
+        header.main-menu nav.menu ul li a {
           text-decoration: none;
           color: #F8F8F8;
           line-height: 30px; }
-        header nav.menu ul li span {
+        header.main-menu nav.menu ul li span {
           padding: 20px; }
 
-section {
+header.slogan {
   background-color: #F6F3E7;
   width: 100%;
-  padding: 10px 0px; }
-  section .lowHeader {
+  padding: 10px 0px;
+  overflow: hidden; }
+  header.slogan .lowHeader {
     width: 1024px;
     height: 88px;
     margin: auto;
     background-color: #F6F3E7; }
-    section .lowHeader .slogan {
+    header.slogan .lowHeader .slogan {
       width: 59%;
       margin-top: 5px;
       float: left; }
-      section .lowHeader .slogan .logo {
+      header.slogan .lowHeader .slogan .logo {
         width: 90px;
         float: left; }
-      section .lowHeader .slogan .text {
+      header.slogan .lowHeader .slogan .text {
         width: 510px;
         float: right;
         padding-left: 8px; }
-        section .lowHeader .slogan .text h3 {
+        header.slogan .lowHeader .slogan .text h3 {
           color: #0D4B72;
           margin-top: 0px; }
-        section .lowHeader .slogan .text p {
+        header.slogan .lowHeader .slogan .text p {
           color: #0D4B72;
           font-size: 12px;
           margin-top: 25px; }
-    section .lowHeader .search {
+    header.slogan .lowHeader .search {
       float: right;
       color: #0D4B72; }
-
-section.lowPlace {
-  width: 1024px;
-  margin: auto;
-  background-color: #F6F3E7;
-  padding-top: 40px;
-  height: 290px; }
-  section.lowPlace .seconLowPlace {
-    width: 100%; }
-    section.lowPlace .seconLowPlace .video {
-      width: 50%;
-      height: 250px;
-      border-radius: 25px;
-      float: left;
-      margin-right: 2%; }
-    section.lowPlace .seconLowPlace .middle, section.lowPlace .seconLowPlace .right {
-      width: 23%;
-      height: 150px;
-      margin-right: 2%;
-      float: left;
-      position: relative; }
-      section.lowPlace .seconLowPlace .middle .withinMiddle, section.lowPlace .seconLowPlace .right .withinMiddle, section.lowPlace .seconLowPlace .right .withinRight {
-        width: 100%;
-        height: 100px;
-        bottom: -100px;
-        position: absolute;
-        background-color: #EFD2AB;
-        color: #0D4B72; }
-        section.lowPlace .seconLowPlace .middle .withinMiddle p.text, section.lowPlace .seconLowPlace .right .withinMiddle p.text, section.lowPlace .seconLowPlace .right .withinRight p.text {
-          margin: 0px;
-          padding: 5px 10px;
-          border-bottom: 1px solid #F8F8F8; }
-        section.lowPlace .seconLowPlace .middle .withinMiddle .btnHighPlace, section.lowPlace .seconLowPlace .right .withinMiddle .btnHighPlace, section.lowPlace .seconLowPlace .right .withinRight .btnHighPlace {
-          width: 120PX;
-          height: 30px;
-          background-color: #C34F4F;
-          position: absolute;
-          text-align: center;
-          padding-top: 2px;
-          border: 1px solid #F8F8F8;
-          bottom: 5px;
-          right: 1px; }
-          section.lowPlace .seconLowPlace .middle .withinMiddle .btnHighPlace:hover, section.lowPlace .seconLowPlace .right .withinMiddle .btnHighPlace:hover, section.lowPlace .seconLowPlace .right .withinRight .btnHighPlace:hover {
-            background: radial-gradient(circle, #D16060, #D16060, #C25050); }
-          section.lowPlace .seconLowPlace .middle .withinMiddle .btnHighPlace p, section.lowPlace .seconLowPlace .right .withinMiddle .btnHighPlace p, section.lowPlace .seconLowPlace .right .withinRight .btnHighPlace p {
-            margin: 0px;
-            padding: 5px 10px; }
-          section.lowPlace .seconLowPlace .middle .withinMiddle .btnHighPlace a, section.lowPlace .seconLowPlace .right .withinMiddle .btnHighPlace a, section.lowPlace .seconLowPlace .right .withinRight .btnHighPlace a {
-            text-decoration: none;
-            color: #F8F8F8; }
-      section.lowPlace .seconLowPlace .middle img, section.lowPlace .seconLowPlace .right img {
-        width: 100%; }
-    section.lowPlace .seconLowPlace .right {
-      margin-right: 0; }
-      section.lowPlace .seconLowPlace .right .withinRight {
-        background-color: #9CAF81; }
-      section.lowPlace .seconLowPlace .right img {
-        width: 100%; }
-
-* {
-  box-sizing: border-box; }
-
-.clearFixed {
-  overflow: hidden; }
 
 nav.seconMenu {
   width: 100%;
@@ -169,7 +112,8 @@ nav.seconMenu {
         background-color: #C34F4F;
         color: #F8F8F8;
         float: right;
-        text-align: center; }
+        text-align: center;
+        padding-top: 2px; }
         nav.seconMenu .proName .searchInfor .btnSearch:hover {
           background: radial-gradient(circle, #D16060, #D16060, #C25050); }
         nav.seconMenu .proName .searchInfor .btnSearch a {
@@ -222,3 +166,264 @@ nav.seconMenu {
       .highPlace .seconHigh .btnHighPlace a {
         text-decoration: none;
         color: #F8F8F8; }
+
+section.graph .seconLowPlace {
+  width: 1024px;
+  background-color: #F6F3E7;
+  margin: auto;
+  padding: 40px 0px; }
+  section.graph .seconLowPlace .video {
+    width: 50%;
+    height: 250px;
+    border-radius: 25px;
+    float: left;
+    margin-right: 2%; }
+  section.graph .seconLowPlace .middle, section.graph .seconLowPlace .right {
+    width: 23%;
+    height: 150px;
+    margin-right: 2%;
+    float: left;
+    position: relative; }
+    section.graph .seconLowPlace .middle .withinMiddle, section.graph .seconLowPlace .right .withinMiddle, section.graph .seconLowPlace .right .withinRight {
+      width: 100%;
+      height: 100px;
+      bottom: -100px;
+      position: absolute;
+      background-color: #EFD2AB;
+      color: #0D4B72; }
+      section.graph .seconLowPlace .middle .withinMiddle p.text, section.graph .seconLowPlace .right .withinMiddle p.text, section.graph .seconLowPlace .right .withinRight p.text {
+        margin: 0px;
+        padding: 5px 10px;
+        border-bottom: 1px solid #F8F8F8; }
+      section.graph .seconLowPlace .middle .withinMiddle .btnHighPlace, section.graph .seconLowPlace .right .withinMiddle .btnHighPlace, section.graph .seconLowPlace .right .withinRight .btnHighPlace {
+        width: 120PX;
+        height: 30px;
+        background-color: #C34F4F;
+        position: absolute;
+        text-align: center;
+        padding-top: 2px;
+        border: 1px solid #F8F8F8;
+        bottom: 5px;
+        right: 1px; }
+        section.graph .seconLowPlace .middle .withinMiddle .btnHighPlace:hover, section.graph .seconLowPlace .right .withinMiddle .btnHighPlace:hover, section.graph .seconLowPlace .right .withinRight .btnHighPlace:hover {
+          background: radial-gradient(circle, #D16060, #D16060, #C25050); }
+        section.graph .seconLowPlace .middle .withinMiddle .btnHighPlace p, section.graph .seconLowPlace .right .withinMiddle .btnHighPlace p, section.graph .seconLowPlace .right .withinRight .btnHighPlace p {
+          margin: 0px;
+          padding: 5px 10px; }
+        section.graph .seconLowPlace .middle .withinMiddle .btnHighPlace a, section.graph .seconLowPlace .right .withinMiddle .btnHighPlace a, section.graph .seconLowPlace .right .withinRight .btnHighPlace a {
+          text-decoration: none;
+          color: #F8F8F8; }
+    section.graph .seconLowPlace .middle img, section.graph .seconLowPlace .right img {
+      width: 100%; }
+  section.graph .seconLowPlace .right {
+    margin-right: 0; }
+    section.graph .seconLowPlace .right .withinRight {
+      background-color: #9CAF81; }
+    section.graph .seconLowPlace .right img {
+      width: 100%; }
+
+section.slider .cSlider {
+  width: 1024px;
+  height: 270px;
+  background-color: #F6F3E7;
+  padding: 10px 0px;
+  margin: auto; }
+  section.slider .cSlider .slider {
+    width: 75%;
+    height: 250px;
+    float: left;
+    background-color: #F6F3E7;
+    position: relative;
+    margin-right: 1px;
+    border-radius: 15px 0px 15px 0px; }
+    section.slider .cSlider .slider .leftArrow {
+      width: 0px;
+      height: 0px;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-right: 30px solid #FFF;
+      position: absolute;
+      top: 50%;
+      left: 27px;
+      cursor: pointer; }
+      section.slider .cSlider .slider .leftArrow:hover {
+        border-right: 30px solid rgba(233, 225, 225, 0.67); }
+    section.slider .cSlider .slider .rightArrow {
+      width: 0px;
+      height: 0px;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 30px solid #FFF;
+      position: absolute;
+      top: 50%;
+      right: 27px;
+      cursor: pointer; }
+      section.slider .cSlider .slider .rightArrow:hover {
+        border-left: 30px solid rgba(233, 225, 225, 0.67); }
+    section.slider .cSlider .slider ul {
+      padding: 0px;
+      margin: 0px; }
+      section.slider .cSlider .slider ul li {
+        list-style: none; }
+  section.slider .cSlider .boys {
+    width: 23%;
+    height: 150px;
+    float: left;
+    position: relative;
+    margin-left: 1.9%; }
+    section.slider .cSlider .boys .withinBoys {
+      width: 100%;
+      height: 100px;
+      bottom: -100px;
+      position: absolute;
+      color: #0D4B72;
+      background-color: #C7CBDB; }
+      section.slider .cSlider .boys .withinBoys p.text {
+        margin: 0px;
+        padding: 5px 10px;
+        border-bottom: 1px solid #F8F8F8; }
+      section.slider .cSlider .boys .withinBoys .btnHighPlace {
+        width: 120PX;
+        height: 30px;
+        background-color: #C34F4F;
+        position: absolute;
+        text-align: center;
+        padding-top: 2px;
+        border: 1px solid #F8F8F8;
+        bottom: 5px;
+        right: 1px; }
+        section.slider .cSlider .boys .withinBoys .btnHighPlace:hover {
+          background: radial-gradient(circle, #D16060, #D16060, #C25050); }
+        section.slider .cSlider .boys .withinBoys .btnHighPlace p {
+          margin: 0px;
+          padding: 5px 10px; }
+        section.slider .cSlider .boys .withinBoys .btnHighPlace a {
+          text-decoration: none;
+          color: #F8F8F8; }
+    section.slider .cSlider .boys img {
+      width: 100%;
+      height: 100%; }
+
+article.information {
+  width: 100%; }
+  article.information .last-section {
+    width: 1024px;
+    height: 300px;
+    margin: auto;
+    background-color: #F6F3E7; }
+    article.information .last-section .lastInformation {
+      width: 75%;
+      height: 300px;
+      border: 3px solid #0D4B72;
+      border-radius: 15px 0px 15px 0px;
+      float: left;
+      margin-right: 1%;
+      padding: 12px; }
+      article.information .last-section .lastInformation .firtsInformation, article.information .last-section .lastInformation .secondnformation, article.information .last-section .lastInformation .secondnformation, article.information .last-section .lastInformation .thirdInformation {
+        font-size: 13px;
+        width: 24%;
+        position: relative;
+        float: left;
+        text-align: justify;
+        color: #0D4B72; }
+        article.information .last-section .lastInformation .firtsInformation .btnHighPlace, article.information .last-section .lastInformation .secondnformation .btnHighPlace, article.information .last-section .lastInformation .secondnformation .btnHighPlace, article.information .last-section .lastInformation .thirdInformation .btnHighPlace {
+          width: 120PX;
+          height: 30px;
+          background-color: #C34F4F;
+          position: absolute;
+          text-align: center;
+          padding-top: 2px;
+          border: 1px solid #F8F8F8;
+          bottom: -75px;
+          right: 1px; }
+          article.information .last-section .lastInformation .firtsInformation .btnHighPlace:hover, article.information .last-section .lastInformation .secondnformation .btnHighPlace:hover, article.information .last-section .lastInformation .secondnformation .btnHighPlace:hover, article.information .last-section .lastInformation .thirdInformation .btnHighPlace:hover {
+            background: radial-gradient(circle, #D16060, #D16060, #C25050); }
+          article.information .last-section .lastInformation .firtsInformation .btnHighPlace p, article.information .last-section .lastInformation .secondnformation .btnHighPlace p, article.information .last-section .lastInformation .secondnformation .btnHighPlace p, article.information .last-section .lastInformation .thirdInformation .btnHighPlace p {
+            margin: 0px;
+            padding: 5px 10px; }
+          article.information .last-section .lastInformation .firtsInformation .btnHighPlace a, article.information .last-section .lastInformation .secondnformation .btnHighPlace a, article.information .last-section .lastInformation .secondnformation .btnHighPlace a, article.information .last-section .lastInformation .thirdInformation .btnHighPlace a {
+            text-decoration: none;
+            color: #F8F8F8; }
+        article.information .last-section .lastInformation .firtsInformation span.title, article.information .last-section .lastInformation .secondnformation span.title, article.information .last-section .lastInformation .secondnformation span.title, article.information .last-section .lastInformation .thirdInformation span.title {
+          font-size: 25px;
+          color: #0D4B72; }
+        article.information .last-section .lastInformation .firtsInformation span.bold, article.information .last-section .lastInformation .secondnformation span.bold, article.information .last-section .lastInformation .secondnformation span.bold, article.information .last-section .lastInformation .thirdInformation span.bold {
+          font-weight: bold; }
+      article.information .last-section .lastInformation .secondnformation {
+        width: 30%;
+        margin: 0px 80px 0px 40px;
+        padding-left: 40px;
+        border-left: 1px dotted #0D4B72; }
+    article.information .last-section .listItems {
+      width: 24%;
+      float: right;
+      color: #0D4B72;
+      padding: 0px 10px;
+      margin-top: 0px; }
+      article.information .last-section .listItems li {
+        width: 100%;
+        height: 27px;
+        background-color: #EFD2AB;
+        margin: 5px 0px;
+        padding: 4px 10px;
+        list-style: none;
+        text-align: left;
+        position: relative; }
+        article.information .last-section .listItems li span.plus {
+          width: 22px;
+          height: 100px;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          background-color: red; }
+          article.information .last-section .listItems li span.plus p {
+            text-align: center;
+            margin: 0px;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer; }
+      article.information .last-section .listItems .lastLi {
+        width: 100%;
+        height: 100px;
+        background-color: #EFD2AB; }
+
+footer.total-footer {
+  width: 100%;
+  margin: 45px auto 0px;
+  height: 90px;
+  border: 5px solid #0D4B72;
+  background-color: #0D4B72; }
+  footer.total-footer .page-Principal {
+    width: 1024px;
+    height: 90px;
+    margin: auto; }
+    footer.total-footer .page-Principal .logo-footer {
+      width: 30%;
+      float: left;
+      background-color: #ffffff;
+      padding: 10px 13px; }
+      footer.total-footer .page-Principal .logo-footer img {
+        max-width: 60%; }
+    footer.total-footer .page-Principal .contact-footer {
+      width: 43%;
+      float: left;
+      padding: 8px 13px;
+      color: #F8F8F8; }
+      footer.total-footer .page-Principal .contact-footer p {
+        margin: 0px;
+        padding: 0px; }
+    footer.total-footer .page-Principal .social-media {
+      width: 27%;
+      height: 100%;
+      float: left; }
+      footer.total-footer .page-Principal .social-media ul {
+        padding: 0;
+        margin: 0;
+        float: right; }
+        footer.total-footer .page-Principal .social-media ul li {
+          width: 24%;
+          padding: 14px 15px 10px 2px;
+          list-style: none;
+          float: left; }
+          footer.total-footer .page-Principal .social-media ul li img {
+            max-width: 100%; }

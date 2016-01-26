@@ -1,10 +1,11 @@
-header{
+//*************** Menu principal ******************
+header.main-menu {
   background-color:$colorPrimario;
   width: 100%;
   nav.menu {
     width: $sizeWeb;
     margin: auto;
-    .rightNav{
+    .rightNav {
       width: 30%;
       background-color: #EFD2AB;
       float: left;

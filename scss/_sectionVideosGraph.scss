@@ -1,25 +1,26 @@
-section.lowPlace{
-  width: $sizeWeb;
-  margin: auto;
-  background-color: $colorFondo;
-  padding-top: 40px;
-  height: 290px;
+//********************************
+//****** Graficas y video ********
+//********************************
+section.graph {
   .seconLowPlace{
-    width: 100%;
-    .video{
+    width: $sizeWeb;
+    background-color: $colorFondo;
+    margin: auto;
+    padding:40px 0px;
+    .video {
       width: 50%;
       height: 250px;
       border-radius: 25px;
       float: left;
       margin-right: 2%;
       }
-      .middle{
+      .middle {
       width: 23%;
       height: 150px;
       margin-right: 2%;
       float: left;
       position: relative;
-      .withinMiddle{
+      .withinMiddle {
         width: 100%;
         height: 100px;
         bottom: -100px;
@@ -31,7 +32,7 @@ section.lowPlace{
           padding: 5px 10px;
           border-bottom: 1px solid $colorTextoBotones;
         }
-        .btnHighPlace{
+        .btnHighPlace {
           width: 120PX;
           height: 30px;
           background-color: $colorBotones;
@@ -41,36 +42,36 @@ section.lowPlace{
           border: 1px solid $colorTextoBotones;
           bottom: 5px;
           right: 1px;
-          &:hover{
+          &:hover {
             background:radial-gradient(circle,#D16060,#D16060,#C25050);
           }
-          p{
+          p {
             margin: 0px;
             padding: 5px 10px;
           }
-          a{
+          a {
             text-decoration: none;
             color:$colorTextoBotones;
           }
         }
       }
-      img{
+      img {
         width: 100%;
       }
       }
 
-      .right{
+      .right {
       @extend .middle;
       margin-right: 0;
 
-      .withinRight{
+      .withinRight {
         @extend .withinMiddle;
         background-color: #9CAF81;
         p.text{
           @extend p.text;
         }
       }
-      img{
+      img {
         width: 100%;
       }
     }//close right

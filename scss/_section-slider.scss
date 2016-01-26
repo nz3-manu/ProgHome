@@ -1,0 +1,104 @@
+//********************************
+//************* Slider ***********
+//********************************
+
+section.slider {
+  .cSlider {
+    width: $sizeWeb;
+    height: 270px;
+    background-color: $colorFondo;
+    padding: 10px 0px;
+    margin: auto;
+    .slider {
+      width: 75%;
+      height: 250px;
+      float: left;
+      background-color: $colorFondo;
+      position: relative;
+      margin-right: 1px;
+      border-radius: 15px 0px 15px 0px;
+        .leftArrow{
+          width: 0px;
+          height: 0px;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-right: 30px solid #FFF;
+          position: absolute;
+          top: 50%;
+          left: 27px;
+          cursor: pointer;
+          &:hover{
+          border-right: 30px solid rgba(#e9e1e1, 0.67);
+          }
+        }
+        .rightArrow{
+          width: 0px;
+          height: 0px;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-left: 30px solid #FFF;
+          position: absolute;
+          top: 50%;
+          right: 27px;
+          cursor: pointer;
+          &:hover{
+          border-left: 30px solid rgba(#e9e1e1, 0.67);
+          }
+        }
+        ul {
+          padding: 0px;
+          margin: 0px;
+          li {
+            list-style: none;
+          }
+        }
+      }
+      .boys {
+        width: 23%;
+        height: 150px;
+        float: left;
+        position: relative;
+        margin-left: 1.9%;
+
+        .withinBoys {
+          width: 100%;
+          height: 100px;
+          bottom: -100px;
+          position: absolute;
+          color:$colorPrimario;
+          background-color: #C7CBDB;
+          p.text {
+          margin: 0px;
+          padding: 5px 10px;
+          border-bottom: 1px solid $colorTextoBotones;
+          }
+          .btnHighPlace{
+            width: 120PX;
+            height: 30px;
+            background-color: $colorBotones;
+            position: absolute;
+            text-align: center;
+            padding-top: 2px;
+            border: 1px solid $colorTextoBotones;
+            bottom: 5px;
+            right: 1px;
+            &:hover {
+              background:radial-gradient(circle,#D16060,#D16060,#C25050);
+            }
+            p {
+              margin: 0px;
+              padding: 5px 10px;
+            }
+            a {
+              text-decoration: none;
+              color:$colorTextoBotones;
+            }
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+  }
+}

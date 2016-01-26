@@ -1,1 +1,1 @@
-function saludar(){console.log("Hola mundo")}
+$(function(){var e=function(){var e={};e.el=$("#slider"),e.items={panel:e.el.find("li")};var n=0,t=1,i=e.items.panel.length;e.init=function(){a()};var a=function(){a=setInterval(e.startSlider,4e3)};return e.startSlider=function(){var a=e.items.panel;t>=i&&(t=0,n=i-1),a.eq(n).fadeOut("slow"),a.eq(t).fadeIn("slow"),n=t,t+=1},e}();e.init()});

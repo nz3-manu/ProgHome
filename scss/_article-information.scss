@@ -1,0 +1,103 @@
+// ************** Article *******************************
+article.information{
+  width: 100%;
+  .last-section {
+    width:$sizeWeb;
+    height: 300px;
+    margin: auto;
+    background-color: $colorFondo;
+    .lastInformation {
+      width: 75%;
+      height: 300px;
+      border: 3px solid $colorPrimario;
+      border-radius: 15px 0px 15px 0px;
+      float: left;
+      margin-right: 1%;
+      padding: 12px;
+      .firtsInformation, .secondnformation, .thirdInformation {
+        font-size: 13px;
+        width: 24%;
+        position: relative;
+        float: left;
+        text-align: justify;
+        color: $colorPrimario;
+
+        .btnHighPlace {
+          width: 120PX;
+          height: 30px;
+          background-color: $colorBotones;
+          position: absolute;
+          text-align: center;
+          padding-top: 2px;
+          border: 1px solid $colorTextoBotones;
+          bottom: -75px;
+          right: 1px;
+          &:hover {
+            background:radial-gradient(circle,#D16060,#D16060,#C25050);
+          }
+          p {
+            margin: 0px;
+            padding: 5px 10px;
+          }
+          a {
+            text-decoration: none;
+            color:$colorTextoBotones;
+          }
+        }
+        span.title {
+          font-size: 25px;
+          color: $colorPrimario;
+        }
+        span.bold {
+          font-weight: bold;
+        }
+      }
+      .secondnformation {
+        @extend .firtsInformation;
+        width: 30%;
+        margin: 0px 80px 0px 40px;
+        padding-left: 40px;
+        border-left: 1px dotted $colorPrimario
+      }
+    }
+      .listItems {
+      width: 24%;
+      float: right;
+      color: $colorPrimario;
+      padding: 0px 10px;
+      margin-top: 0px;
+
+      li {
+        width: 100%;
+        height: 27px;
+        background-color: #EFD2AB;
+        margin: 5px 0px;
+        padding: 4px 10px;
+        list-style: none;
+        text-align: left;
+        position: relative;
+        span.plus{
+          width: 22px;
+          height: 100px;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          background-color: red;
+
+          p{
+            text-align: center;
+            margin: 0px;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+      .lastLi{
+        width: 100%;
+        height: 100px;
+        background-color: #EFD2AB;
+      }
+    }
+  }
+}

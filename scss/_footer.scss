@@ -1,0 +1,55 @@
+//********************************
+//************* Footer ***********
+//********************************
+footer.total-footer {
+  width: 100%;
+  margin: 45px auto 0px;
+  height: 90px;
+  border: 5px solid #0D4B72;
+  background-color: $colorPrimario;
+
+  .page-Principal{
+    width: $sizeWeb;
+    height: 90px;
+    margin: auto;
+
+    .logo-footer {
+      width: 30%;
+      float: left;
+      background-color: #ffffff;
+      padding: 10px 13px;
+      img {
+        max-width: 60%;
+      }
+    }
+    .contact-footer {
+      width: 43%;
+      float: left;
+      padding: 8px 13px;
+      color: $colorTextoBotones;
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+    .social-media {
+      width: 27%;
+      height: 100%;
+      float: left;
+      ul {
+        padding: 0;
+        margin: 0;
+        float: right;
+        li {
+          width: 24%;
+          padding: 14px 15px 10px 2px;
+          list-style: none;
+          float: left;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

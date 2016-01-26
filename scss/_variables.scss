@@ -1,6 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+.clearFixed {
+  overflow: hidden;
+}
+
 $colorPrimario: #0D4B72;
 $colorBotones: #C34F4F;
 $colorMenuContac: #C7CBDB;
 $colorTextoBotones: #F8F8F8;
-$colorFondo:#F6F3E7;
-$sizeWeb:1024px;
+$colorFondo: #F6F3E7;
+$sizeWeb: 1024px;
