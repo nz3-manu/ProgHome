@@ -1,13 +1,10 @@
-//********************************
 //************* Slider ***********
-//********************************
-
 section.slider {
   .cSlider {
     width: $sizeWeb;
     height: 270px;
     background-color: $colorFondo;
-    padding: 10px 0px;
+    padding: 10px $padding-width;
     margin: auto;
     .slider {
       width: 75%;

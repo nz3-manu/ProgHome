@@ -9,6 +9,7 @@ header.slogan {
     height: 88px;
     margin: auto;
     background-color: $colorFondo;
+    padding: 0px $padding-width;
     .slogan {
       width: 59%;
       margin-top: 5px;
@@ -18,7 +19,7 @@ header.slogan {
         float: left;
       }
       .text {
-        width: 510px;
+        width: 480px;;
         float:right;
         padding-left: 8px;
         h3 {
@@ -32,9 +33,33 @@ header.slogan {
          }
       }
     }
-    .search{
+    .search {
       float: right;
       color: $colorPrimario;
+      .text-reload{
+        width: 120px;
+        padding: 6px 14px 0 0;
+        p{
+          margin: 0px;
+          padding: 0px 5px;
+          float: left;
+        }
+        span.reload {
+          cursor: pointer;
+          img {
+          max-width: 20px
+          }
+        }
+      }
+      .search-icon{
+        cursor: pointer;
+        .icon-search{
+          img{
+            max-width: 20px;
+            vertical-align: middle;
+          }
+        }
+      }
     }
   }
 }

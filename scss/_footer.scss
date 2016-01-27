@@ -1,9 +1,7 @@
-//********************************
 //************* Footer ***********
-//********************************
 footer.total-footer {
   width: 100%;
-  margin: 45px auto 0px;
+  margin: auto;
   height: 90px;
   border: 5px solid #0D4B72;
   background-color: $colorPrimario;
@@ -12,6 +10,7 @@ footer.total-footer {
     width: $sizeWeb;
     height: 90px;
     margin: auto;
+    padding: 0px $padding-width;
 
     .logo-footer {
       width: 30%;
@@ -30,6 +29,7 @@ footer.total-footer {
       p {
         margin: 0px;
         padding: 0px;
+        font-size: 13px;
       }
     }
     .social-media {

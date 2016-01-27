@@ -8,6 +8,7 @@ nav.seconMenu {
   margin: auto;
   color:$colorPrimario;
   border-bottom-right-radius: 20px;
+  padding: 0px $padding-width;
   .btn {
     width: 5%;
     height: 50px;
@@ -72,7 +73,7 @@ nav.seconMenu {
   width: $sizeWeb;
   height: 295px;
   background-color: $colorFondo;
-  padding-top: 15px;
+  padding: 15px $padding-width 0px;
   margin: auto;
   baner.bannerContainer {
     width: 30%;

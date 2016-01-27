@@ -1,12 +1,10 @@
-//********************************
 //****** Graficas y video ********
-//********************************
 section.graph {
   .seconLowPlace{
     width: $sizeWeb;
     background-color: $colorFondo;
     margin: auto;
-    padding:40px 0px;
+    padding:40px $padding-width;
     .video {
       width: 50%;
       height: 250px;
