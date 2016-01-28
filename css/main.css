@@ -16,23 +16,52 @@ header.main-menu {
       background-color: #EFD2AB;
       float: left;
       height: 30px; }
-    header.main-menu nav.menu ul {
+    header.main-menu nav.menu ul.wrap-li {
       width: 74%;
       float: right;
       list-style: none;
       background-color: #0D4B72;
       padding: 0px;
       margin: 0px; }
-      header.main-menu nav.menu ul li {
+      header.main-menu nav.menu ul.wrap-li li {
         float: left;
         padding-right: 10px;
         border-right: 1px solid #F8F8F8; }
-        header.main-menu nav.menu ul li a {
+        header.main-menu nav.menu ul.wrap-li li a {
           text-decoration: none;
           color: #F8F8F8;
           line-height: 30px; }
-        header.main-menu nav.menu ul li span {
+          header.main-menu nav.menu ul.wrap-li li a:hover {
+            color: #C7CBDB; }
+        header.main-menu nav.menu ul.wrap-li li span {
           padding: 20px; }
+
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width: 1000px) {
+  header.main-menu nav.menu {
+    width: 748px; }
+    header.main-menu nav.menu .rightNav {
+      display: none; }
+    header.main-menu nav.menu ul.wrap-li {
+      width: 100%;
+      float: none;
+      background-color: #0D4B72;
+      padding: 0px;
+      margin: 0px; }
+      header.main-menu nav.menu ul.wrap-li li {
+        float: left;
+        padding-right: 10px;
+        border-right: 1px solid #F8F8F8; }
+        header.main-menu nav.menu ul.wrap-li li a {
+          text-decoration: none;
+          color: #F8F8F8;
+          line-height: 30px; }
+          header.main-menu nav.menu ul.wrap-li li a:hover {
+            color: #C7CBDB; }
+        header.main-menu nav.menu ul.wrap-li li span {
+          padding: 20px; } }
 
 header.slogan {
   background-color: #F6F3E7;
@@ -64,6 +93,7 @@ header.slogan {
           font-size: 12px;
           margin-top: 25px; }
     header.slogan .lowHeader .search {
+      width: 287px;
       float: right;
       color: #0D4B72; }
       header.slogan .lowHeader .search .text-reload {
@@ -82,6 +112,42 @@ header.slogan {
         header.slogan .lowHeader .search .search-icon .icon-search img {
           max-width: 20px;
           vertical-align: middle; }
+
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width: 1000px) {
+  header.slogan .lowHeader .slogan {
+    width: 50%; }
+    header.slogan .lowHeader .slogan .text {
+      width: 75%;
+      margin: 0px;
+      padding: 0px; }
+      header.slogan .lowHeader .slogan .text h3 {
+        padding: 0px;
+        margin-bottom: 5px; }
+      header.slogan .lowHeader .slogan .text p {
+        padding: 0px;
+        margin: 0px; }
+  header.slogan .lowHeader .search {
+    float: right;
+    color: #0D4B72; }
+    header.slogan .lowHeader .search .text-reload {
+      width: 120px;
+      padding: 6px 14px 0 0; }
+      header.slogan .lowHeader .search .text-reload p {
+        margin: 0px;
+        padding: 0px 5px;
+        float: left; }
+      header.slogan .lowHeader .search .text-reload span.reload {
+        cursor: pointer; }
+        header.slogan .lowHeader .search .text-reload span.reload img {
+          max-width: 20px; }
+    header.slogan .lowHeader .search .search-icon {
+      cursor: pointer; }
+      header.slogan .lowHeader .search .search-icon .icon-search img {
+        max-width: 20px;
+        vertical-align: middle; } }
 
 nav.seconMenu {
   width: 100%;
@@ -376,37 +442,60 @@ article.information {
         border-left: 1px dotted #0D4B72; }
     article.information .last-section .listItems {
       width: 24%;
+      height: 297px;
       float: right;
       color: #0D4B72;
       padding: 0px 10px;
-      margin-top: 0px; }
+      margin-top: 0px;
+      overflow-y: hidden; }
       article.information .last-section .listItems li {
-        width: 100%;
-        height: 27px;
-        background-color: #EFD2AB;
-        margin: 5px 0px;
-        padding: 4px 10px;
-        list-style: none;
-        text-align: left;
-        position: relative; }
-        article.information .last-section .listItems li span.plus {
-          width: 22px;
-          height: 100px;
-          position: absolute;
-          right: 0px;
-          top: 0px;
-          background-color: #C34F4F; }
-          article.information .last-section .listItems li span.plus p {
+        list-style: none; }
+        article.information .last-section .listItems li .article-accordion {
+          width: 100%;
+          height: 27px;
+          background-color: #EFD2AB;
+          margin: 5px 0px;
+          padding: 4px 10px;
+          list-style: none;
+          text-align: left;
+          position: relative; }
+          article.information .last-section .listItems li .article-accordion .plus.open {
+            width: 22px;
+            height: 100px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            background-color: green; }
+          article.information .last-section .listItems li .article-accordion .plus {
+            width: 22px;
+            height: 100px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            background-color: #C34F4F; }
+            article.information .last-section .listItems li .article-accordion .plus:hover {
+              background-color: #0D4B72; }
+          article.information .last-section .listItems li .article-accordion p {
             text-align: center;
             margin: 0px;
             color: #ffffff;
             font-weight: bold;
             cursor: pointer;
             padding-top: 4px; }
-      article.information .last-section .listItems .lastLi {
-        width: 100%;
-        height: 100px;
-        background-color: #EFD2AB; }
+      article.information .last-section .listItems .submenu {
+        display: none; }
+        article.information .last-section .listItems .submenu li {
+          cursor: pointer;
+          border-bottom: 1px solid #C7CBDB;
+          margin: 0px;
+          padding: 5px 0px; }
+          article.information .last-section .listItems .submenu li:hover {
+            color: #F8F8F8;
+            background-color: #C34F4F; }
+    article.information .last-section .lastLi {
+      width: 100%;
+      height: 100px;
+      background-color: #EFD2AB; }
 
 footer.total-footer {
   width: 100%;

@@ -34,6 +34,7 @@ header.slogan {
       }
     }
     .search {
+      width: 287px;
       float: right;
       color: $colorPrimario;
       .text-reload{
@@ -63,3 +64,60 @@ header.slogan {
     }
   }
 }
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+
+@media screen and (max-width:1000px) {
+    header.slogan {
+      .lowHeader {
+        .slogan {
+          width: 50%;
+          .logo {
+          }
+          .text {
+            width: 75%;
+            margin: 0px;
+            padding: 0px;
+            h3 {
+              padding: 0px;
+              margin-bottom: 5px;
+             }
+            p {
+              padding: 0px;
+              margin: 0px;
+             }
+          }
+        }
+        .search {
+          float: right;
+          color: $colorPrimario;
+
+          .text-reload{
+            width: 120px;
+            padding: 6px 14px 0 0;
+            p{
+              margin: 0px;
+              padding: 0px 5px;
+              float: left;
+            }
+            span.reload {
+              cursor: pointer;
+              img {
+              max-width: 20px
+              }
+            }
+          }
+          .search-icon{
+            cursor: pointer;
+            .icon-search{
+              img{
+                max-width: 20px;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

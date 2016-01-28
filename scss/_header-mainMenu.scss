@@ -12,13 +12,14 @@ header.main-menu {
       float: left;
       height: 30px;
     }
-      ul {
+      ul.wrap-li {
         width: 74%;
         float: right;
         list-style: none;
         background-color:$colorPrimario;
         padding: 0px;
         margin: 0px;
+
           li {
             float:left;
             padding-right: 10px;
@@ -27,7 +28,10 @@ header.main-menu {
                 text-decoration: none;
                 color:$colorTextoBotones;
                 line-height: 30px;
+                &:hover{
+                  color: #C7CBDB;
                 }
+              }
               span {
                 padding: 20px;
               }
@@ -35,3 +39,41 @@ header.main-menu {
         }
     }
 }
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+
+@media screen and (max-width:1000px) {
+    header.main-menu {
+      nav.menu {
+        width: 748px;
+        .rightNav {
+        display: none;
+        }
+          ul.wrap-li {
+            width: 100%;
+            float: none;
+            background-color:$colorPrimario;
+            padding: 0px;
+            margin: 0px;
+
+              li {
+                float:left;
+                padding-right: 10px;
+                border-right: 1px solid $colorTextoBotones;
+                  a {
+                    text-decoration: none;
+                    color:$colorTextoBotones;
+                    line-height: 30px;
+                    &:hover{
+                      color: #C7CBDB;
+                    }
+                  }
+                  span {
+                    padding: 20px;
+                  }
+               }
+            }
+        }
+    }
+  }

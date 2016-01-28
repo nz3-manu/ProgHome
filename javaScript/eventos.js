@@ -38,3 +38,33 @@ $(function() {
   }());
   sliderModule.init();
 });
+
+/************************************************************************
+----------------------- Menu en accordion -------------------------------
+========================================================================*/
+$(function(){
+ var Accordion = function(el, multiple){  //Creamos objeto
+    this.el = el || {}; // creamos un metodo o un objeto
+    this.multiple = multiple || false; //creamos un metodo o un boleano
+
+    //Variables privadas
+    var links = this.el.find('.article-accordion');
+    //evento
+    links.on('click',{el: this.el, multiple: this.multiple} ,this.dropdown)
+ }
+
+ Accordion.prototype.dropdown = function(e) {  //Creando metodo
+    var $el = e.data.el;
+        $this = $(this),
+        $next = $this.next('');
+
+      $next.slideToggle()
+      $this.find('p').toggleClass('open');
+
+      if(!e.data.multiple) {
+        $el.find('.submenu').not($next).slideUp().find('p').removeClass('open');
+      };
+ }
+
+  var accordion = new Accordion($('#accordion'),false);
+});
