@@ -1,4 +1,11 @@
 //*************** Menu principal ******************
+*{
+  box-sizing: border-box;
+}
+.clearFixed {
+  overflow: hidden;
+}
+
 header.main-menu {
   background-color:$colorPrimario;
   width: 100%;

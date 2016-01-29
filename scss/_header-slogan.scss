@@ -1,15 +1,14 @@
 //****** header logo y lema ******
 header.slogan {
-  background-color: $colorFondo;
   width: 100%;
-  padding: 10px 0px;
   overflow: hidden;
   .lowHeader{
     width:$sizeWeb;
-    height: 88px;
+    height: 108px;
+    background-color: $colorFondo;
     margin: auto;
     background-color: $colorFondo;
-    padding: 0px $padding-width;
+    padding: 10px $padding-width;
     .slogan {
       width: 59%;
       margin-top: 5px;
@@ -71,8 +70,9 @@ header.slogan {
 @media screen and (max-width:1000px) {
     header.slogan {
       .lowHeader {
+        width: 100%;
         .slogan {
-          width: 50%;
+          width: 59%;
           .logo {
           }
           .text {
@@ -90,30 +90,24 @@ header.slogan {
           }
         }
         .search {
-          float: right;
-          color: $colorPrimario;
 
           .text-reload{
-            width: 120px;
-            padding: 6px 14px 0 0;
+
             p{
-              margin: 0px;
-              padding: 0px 5px;
-              float: left;
+
             }
             span.reload {
-              cursor: pointer;
+
               img {
-              max-width: 20px
+
               }
             }
           }
           .search-icon{
-            cursor: pointer;
+
             .icon-search{
               img{
-                max-width: 20px;
-                vertical-align: middle;
+
               }
             }
           }

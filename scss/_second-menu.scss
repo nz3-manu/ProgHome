@@ -123,3 +123,67 @@ nav.seconMenu {
     }
   }
 }
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+
+@media screen and (max-width:1000px) {
+    nav.seconMenu {
+      width: 100%;
+      .proName {
+      width: 100%;
+      .btn {
+        &:hover {
+        }
+        a {
+        }
+      }
+      .contacInfor {
+        padding: 14px 24px 0px 24px;
+        .program {
+          width: 53%;
+          p {
+            }
+          }
+         }
+         .searchInfor {
+          width: 171px;
+          input {
+           }
+           .btnSearch {
+             &:hover{
+
+             }
+             a {
+
+             }
+           }
+         }
+        }
+    }
+    // NOTE: parte alta
+    .highPlace {
+      width: 100%;
+      baner.bannerContainer {
+
+          .banner1, .banner2, .banner3, .banner4, .banner5, .banner6 {
+            padding: 12px 15px;
+        }
+      }
+      .seconHigh {
+
+        img {
+          max-width: 100%;
+        }
+        .btnHighPlace {
+
+          &:hover {
+
+          }
+          a {
+
+          }
+        }
+      }
+    }
+  }

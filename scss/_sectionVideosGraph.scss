@@ -75,3 +75,57 @@ section.graph {
     }//close right
   }
 }
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width:1000px) {
+  section.graph {
+    .seconLowPlace{
+      width: 100%;
+      .video {
+        width: 50%;
+        height: 250px;
+        border-radius: 25px;
+        float: left;
+        margin-right: 2%;
+        }
+        .middle {
+        .withinMiddle {
+          width: 100%;
+          height: 100px;
+          p.text{
+
+          }
+          .btnHighPlace {
+
+            &:hover {
+              background:radial-gradient(circle,#D16060,#D16060,#C25050);
+            }
+            p {
+              margin: 0px;
+              padding: 5px 10px;
+            }
+            a {
+              text-decoration: none;
+              color:$colorTextoBotones;
+            }
+          }
+        }
+        img {
+        height: 100%;
+        }
+        }
+        .right {
+        .withinRight {
+          width: 100%;
+          height: 100px;
+          p.text{
+          }
+        }
+        img {
+        height: 100%;
+        }
+      }//close right
+    }
+  }
+}

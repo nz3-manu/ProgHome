@@ -1,5 +1,5 @@
 // ************** Article *******************************
-article.information{
+article.information {
   width: 100%;
   .last-section {
     width:$sizeWeb;
@@ -31,7 +31,7 @@ article.information{
           text-align: center;
           padding-top: 2px;
           border: 1px solid $colorTextoBotones;
-          bottom: -75px;
+          top: 230px;
           right: 1px;
           &:hover {
             background:radial-gradient(circle,#D16060,#D16060,#C25050);
@@ -129,4 +129,68 @@ article.information{
           background-color: #EFD2AB;
         }
     }
+}
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width:1000px) {
+  article.information {
+    .last-section {
+      width: 100%;
+      .lastInformation {
+        .firtsInformation, .secondnformation, .thirdInformation {
+          width: 30%;
+          font-size: 12px;
+          .btnHighPlace {
+            top: 230px;
+            &:hover {
+            }
+            p {
+
+            }
+            a {
+            }
+          }
+          span.title {
+
+          }
+          span.bold {
+
+          }
+        }
+        .secondnformation {
+          margin: 0px 22px 0px 19px;
+          padding-left: 11px;
+        }
+      }
+        .listItems {
+
+        li{
+          .article-accordion {
+            .plus.open{
+            }
+              .plus {
+                &:hover{
+                }
+                }
+                p{
+
+                }
+              }
+            }
+            .submenu {
+              display: none;
+              li{
+                &:hover{
+
+                }
+              }
+            }
+            }
+          .lastLi {
+
+          }
+      }
+  }
+
 }

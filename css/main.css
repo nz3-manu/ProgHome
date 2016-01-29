@@ -64,16 +64,15 @@ header.main-menu {
           padding: 20px; } }
 
 header.slogan {
-  background-color: #F6F3E7;
   width: 100%;
-  padding: 10px 0px;
   overflow: hidden; }
   header.slogan .lowHeader {
     width: 1024px;
-    height: 88px;
+    height: 108px;
+    background-color: #F6F3E7;
     margin: auto;
     background-color: #F6F3E7;
-    padding: 0px 20px; }
+    padding: 10px 20px; }
     header.slogan .lowHeader .slogan {
       width: 59%;
       margin-top: 5px;
@@ -117,37 +116,20 @@ header.slogan {
 /*------------------ device 1000 px ------------------*/
 /*****************************************************/
 @media screen and (max-width: 1000px) {
-  header.slogan .lowHeader .slogan {
-    width: 50%; }
-    header.slogan .lowHeader .slogan .text {
-      width: 75%;
-      margin: 0px;
-      padding: 0px; }
-      header.slogan .lowHeader .slogan .text h3 {
-        padding: 0px;
-        margin-bottom: 5px; }
-      header.slogan .lowHeader .slogan .text p {
-        padding: 0px;
-        margin: 0px; }
-  header.slogan .lowHeader .search {
-    float: right;
-    color: #0D4B72; }
-    header.slogan .lowHeader .search .text-reload {
-      width: 120px;
-      padding: 6px 14px 0 0; }
-      header.slogan .lowHeader .search .text-reload p {
+  header.slogan .lowHeader {
+    width: 100%; }
+    header.slogan .lowHeader .slogan {
+      width: 59%; }
+      header.slogan .lowHeader .slogan .text {
+        width: 75%;
         margin: 0px;
-        padding: 0px 5px;
-        float: left; }
-      header.slogan .lowHeader .search .text-reload span.reload {
-        cursor: pointer; }
-        header.slogan .lowHeader .search .text-reload span.reload img {
-          max-width: 20px; }
-    header.slogan .lowHeader .search .search-icon {
-      cursor: pointer; }
-      header.slogan .lowHeader .search .search-icon .icon-search img {
-        max-width: 20px;
-        vertical-align: middle; } }
+        padding: 0px; }
+        header.slogan .lowHeader .slogan .text h3 {
+          padding: 0px;
+          margin-bottom: 5px; }
+        header.slogan .lowHeader .slogan .text p {
+          padding: 0px;
+          margin: 0px; } }
 
 nav.seconMenu {
   width: 100%;
@@ -252,6 +234,27 @@ nav.seconMenu {
         text-decoration: none;
         color: #F8F8F8; }
 
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width: 1000px) {
+  nav.seconMenu {
+    width: 100%; }
+    nav.seconMenu .proName {
+      width: 100%; }
+      nav.seconMenu .proName .contacInfor {
+        padding: 14px 24px 0px 24px; }
+        nav.seconMenu .proName .contacInfor .program {
+          width: 53%; }
+      nav.seconMenu .proName .searchInfor {
+        width: 171px; }
+  .highPlace {
+    width: 100%; }
+    .highPlace baner.bannerContainer .banner1, .highPlace baner.bannerContainer .banner2, .highPlace baner.bannerContainer .banner3, .highPlace baner.bannerContainer .banner4, .highPlace baner.bannerContainer .banner5, .highPlace baner.bannerContainer .banner6 {
+      padding: 12px 15px; }
+    .highPlace .seconHigh img {
+      max-width: 100%; } }
+
 section.graph .seconLowPlace {
   width: 1024px;
   background-color: #F6F3E7;
@@ -306,6 +309,37 @@ section.graph .seconLowPlace {
       background-color: #9CAF81; }
     section.graph .seconLowPlace .right img {
       width: 100%; }
+
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width: 1000px) {
+  section.graph .seconLowPlace {
+    width: 100%; }
+    section.graph .seconLowPlace .video {
+      width: 50%;
+      height: 250px;
+      border-radius: 25px;
+      float: left;
+      margin-right: 2%; }
+    section.graph .seconLowPlace .middle .withinMiddle, section.graph .seconLowPlace .right .withinMiddle, section.graph .seconLowPlace .right .withinRight {
+      width: 100%;
+      height: 100px; }
+      section.graph .seconLowPlace .middle .withinMiddle .btnHighPlace:hover, section.graph .seconLowPlace .right .withinMiddle .btnHighPlace:hover, section.graph .seconLowPlace .right .withinRight .btnHighPlace:hover {
+        background: radial-gradient(circle, #D16060, #D16060, #C25050); }
+      section.graph .seconLowPlace .middle .withinMiddle .btnHighPlace p, section.graph .seconLowPlace .right .withinMiddle .btnHighPlace p, section.graph .seconLowPlace .right .withinRight .btnHighPlace p {
+        margin: 0px;
+        padding: 5px 10px; }
+      section.graph .seconLowPlace .middle .withinMiddle .btnHighPlace a, section.graph .seconLowPlace .right .withinMiddle .btnHighPlace a, section.graph .seconLowPlace .right .withinRight .btnHighPlace a {
+        text-decoration: none;
+        color: #F8F8F8; }
+    section.graph .seconLowPlace .middle img, section.graph .seconLowPlace .right img {
+      height: 100%; }
+    section.graph .seconLowPlace .right .withinRight {
+      width: 100%;
+      height: 100px; }
+    section.graph .seconLowPlace .right img {
+      height: 100%; } }
 
 section.slider .cSlider {
   width: 1024px;
@@ -389,6 +423,15 @@ section.slider .cSlider {
       width: 100%;
       height: 100%; }
 
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width: 1000px) {
+  section.slider .cSlider {
+    width: 100%; }
+    section.slider .cSlider .boys {
+      width: 22%; } }
+
 article.information {
   width: 100%; }
   article.information .last-section {
@@ -420,7 +463,7 @@ article.information {
           text-align: center;
           padding-top: 2px;
           border: 1px solid #F8F8F8;
-          bottom: -75px;
+          top: 230px;
           right: 1px; }
           article.information .last-section .lastInformation .firtsInformation .btnHighPlace:hover, article.information .last-section .lastInformation .secondnformation .btnHighPlace:hover, article.information .last-section .lastInformation .secondnformation .btnHighPlace:hover, article.information .last-section .lastInformation .thirdInformation .btnHighPlace:hover {
             background: radial-gradient(circle, #D16060, #D16060, #C25050); }
@@ -497,6 +540,23 @@ article.information {
       height: 100px;
       background-color: #EFD2AB; }
 
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width: 1000px) {
+  article.information .last-section {
+    width: 100%; }
+    article.information .last-section .lastInformation .firtsInformation, article.information .last-section .lastInformation .secondnformation, article.information .last-section .lastInformation .secondnformation, article.information .last-section .lastInformation .thirdInformation {
+      width: 30%;
+      font-size: 12px; }
+      article.information .last-section .lastInformation .firtsInformation .btnHighPlace, article.information .last-section .lastInformation .secondnformation .btnHighPlace, article.information .last-section .lastInformation .secondnformation .btnHighPlace, article.information .last-section .lastInformation .thirdInformation .btnHighPlace {
+        top: 230px; }
+    article.information .last-section .lastInformation .secondnformation {
+      margin: 0px 22px 0px 19px;
+      padding-left: 11px; }
+    article.information .last-section .listItems .submenu {
+      display: none; } }
+
 footer.total-footer {
   width: 100%;
   margin: auto;
@@ -539,3 +599,12 @@ footer.total-footer {
           float: left; }
           footer.total-footer .page-Principal .social-media ul li img {
             max-width: 100%; }
+
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width: 1000px) {
+  footer.total-footer {
+    width: 100%; }
+    footer.total-footer .page-Principal {
+      width: 100%; } }

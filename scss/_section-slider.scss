@@ -99,3 +99,55 @@ section.slider {
       }
   }
 }
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width:1000px) {
+  section.slider {
+    .cSlider {
+      width: 100%;
+      .slider {
+          .leftArrow{
+            &:hover{
+            }
+          }
+          .rightArrow{
+            &:hover{
+            }
+          }
+          ul {
+            li {
+            }
+          }
+        }
+        .boys {
+          width: 22%;
+
+          .withinBoys {
+
+            p.text {
+
+            }
+            .btnHighPlace{
+
+              &:hover {
+
+              }
+              p {
+
+
+              }
+              a {
+
+              }
+            }
+          }
+          img {
+
+          }
+        }
+    }
+  }
+
+
+}

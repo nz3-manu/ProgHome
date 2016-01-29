@@ -53,3 +53,33 @@ footer.total-footer {
     }
   }
 }
+/******************** Media Queris ********************/
+/*------------------ device 1000 px ------------------*/
+/*****************************************************/
+@media screen and (max-width:1000px) {
+  footer.total-footer {
+    width: 100%;
+    .page-Principal{
+      width: 100%;
+      .logo-footer {
+        img {
+        }
+      }
+      .contact-footer {
+        p {
+        }
+      }
+      .social-media {
+        ul {
+          li {
+
+            img {
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
