@@ -5,7 +5,6 @@
 .clearFixed {
   overflow: hidden;
 }
-
 header.main-menu {
   background-color:$colorPrimario;
   width: 100%;
@@ -84,3 +83,41 @@ header.main-menu {
         }
     }
   }
+
+  /******************** Media Queris ********************/
+  /*------------------ device 360 px ------------------*/
+  /*****************************************************/
+  @media screen and (max-width:360px) {
+      header.main-menu {
+        nav.menu {
+          width: 100%;
+          padding: 0px 1px;
+          .rightNav {
+          display: none;
+          }
+            ul.wrap-li {
+              width: 100%;
+              float: none;
+              background-color:$colorPrimario;
+              padding: 0px;
+              margin: 0px;
+
+                li {
+                  float:none;
+                  padding: 0px;
+                  border-bottom: 1px solid $colorTextoBotones;
+
+                    a {
+                      text-decoration: none;
+                      color:$colorTextoBotones;
+                      line-height: 23px;
+
+                    }
+                    span {
+                      padding: 15px;
+                    }
+                 }
+              }
+          }
+      }
+    }

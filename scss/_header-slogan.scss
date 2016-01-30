@@ -27,7 +27,7 @@ header.slogan {
          }
         p {
           color: $colorPrimario;
-          font-size: 12px;
+          font-size: 0.75rem;
           margin-top: 25px;
          }
       }
@@ -86,6 +86,54 @@ header.slogan {
             p {
               padding: 0px;
               margin: 0px;
+             }
+          }
+        }
+        .search {
+
+          .text-reload{
+
+            p{
+
+            }
+            span.reload {
+
+              img {
+
+              }
+            }
+          }
+          .search-icon{
+
+            .icon-search{
+              img{
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /******************** Media Queris ********************/
+  /*------------------ device 360 px ------------------*/
+  /*****************************************************/
+  @media screen and (max-width:360px) {
+    header.slogan {
+      .lowHeader {
+        height: auto;
+        .slogan {
+          display: none;
+          .logo {
+          }
+          .text {
+
+            h3 {
+
+             }
+            p {
+
              }
           }
         }

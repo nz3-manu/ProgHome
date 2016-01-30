@@ -35,7 +35,7 @@ nav.seconMenu {
     .program {
       width: 65%;
       float: left;
-      font-size: 23px;
+      font-size: 1.4rem;
       p {
         margin: 0px;
         }
@@ -85,7 +85,7 @@ nav.seconMenu {
     overflow: scroll;
     box-shadow: 0px 0px 5px 5px #666666;
       .banner1, .banner2, .banner3, .banner4, .banner5, .banner6 {
-        font-size: 20px;
+        font-size: 1.2rem;
         background-color:$colorPrimario;
         color:$colorTextoBotones;
         padding: 16px 15px;
@@ -187,3 +187,73 @@ nav.seconMenu {
       }
     }
   }
+
+  /******************** Media Queris ********************/
+  /*------------------ device 360 px ------------------*/
+  /*****************************************************/
+
+@media screen and (max-width:360px) {
+  nav.seconMenu {
+    width: 100%;
+    .proName {
+    width: 100%;
+    .btn {
+      display: none;
+      &:hover {
+      }
+      a {
+      }
+    }
+    .contacInfor {
+      padding: 1px 2px 0px 2px;
+      .program {
+        width: 53%;
+        p {
+          font-size: 1.3rem;
+          }
+        }
+       }
+       .searchInfor {
+        display: none;
+        input {
+         }
+         .btnSearch {
+           &:hover{
+
+           }
+           a {
+
+           }
+         }
+       }
+      }
+  }
+  // NOTE: parte alta
+  .highPlace {
+    width: 100%;
+    padding: 10px 5px 0px;
+    baner.bannerContainer {
+      width: 100%;
+        .banner1, .banner2, .banner3, .banner4, .banner5, .banner6 {
+          padding: 12px 15px;
+      }
+    }
+    .seconHigh {
+
+      img {
+        display: none;
+      }
+      .btnHighPlace {
+
+        &:hover {
+
+        }
+        a {
+
+        }
+      }
+    }
+  }
+
+
+}

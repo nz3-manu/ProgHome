@@ -16,7 +16,7 @@ article.information {
       margin-right: 1%;
       padding: 12px;
       .firtsInformation, .secondnformation, .thirdInformation {
-        font-size: 13px;
+        font-size: 0.8rem;
         width: 24%;
         position: relative;
         float: left;
@@ -46,7 +46,7 @@ article.information {
           }
         }
         span.title {
-          font-size: 25px;
+          font-size: 1.4rem;
           color: $colorPrimario;
         }
         span.bold {
@@ -137,10 +137,11 @@ article.information {
   article.information {
     .last-section {
       width: 100%;
+      height: auto;
       .lastInformation {
         .firtsInformation, .secondnformation, .thirdInformation {
           width: 30%;
-          font-size: 12px;
+          font-size: 0.7rem;
           .btnHighPlace {
             top: 230px;
             &:hover {
@@ -193,4 +194,70 @@ article.information {
       }
   }
 
+}
+/******************** Media Queris ********************/
+/*------------------ device 360 px ------------------*/
+/*****************************************************/
+@media screen and (max-width:360px) {
+  article.information {
+    .last-section {
+      padding: 0px 5px;
+      .lastInformation {
+        width: 100%;
+        display: none;
+        .firtsInformation, .secondnformation, .thirdInformation {
+          width: 42%;
+          font-size: 0.6rem;
+          .btnHighPlace {
+            top: 230px;
+            &:hover {
+            }
+            p {
+
+            }
+            a {
+            }
+          }
+          span.title {
+
+          }
+          span.bold {
+
+          }
+        }
+        .secondnformation {
+          margin: 0px 22px 0px 19px;
+          padding-left: 11px;
+        }
+      }
+        .listItems {
+        width: 100%;
+        padding: 10px 0px;
+        li{
+          .article-accordion {
+            .plus.open{
+            }
+              .plus {
+                &:hover{
+                }
+                }
+                p{
+
+                }
+              }
+            }
+            .submenu {
+              display: none;
+              li{
+                &:hover{
+
+                }
+              }
+            }
+            }
+          .lastLi {
+
+          }
+      }
+  }
 }

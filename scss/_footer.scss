@@ -29,7 +29,7 @@ footer.total-footer {
       p {
         margin: 0px;
         padding: 0px;
-        font-size: 13px;
+        font-size: 0.81rem;
       }
     }
     .social-media {
@@ -67,6 +67,39 @@ footer.total-footer {
       }
       .contact-footer {
         p {
+        }
+      }
+      .social-media {
+        ul {
+          li {
+
+            img {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/******************** Media Queris ********************/
+/*------------------ device 360 px ------------------*/
+/*****************************************************/
+@media screen and (max-width:360px) {
+  footer.total-footer {
+    width: 100%;
+    .page-Principal{
+      width: 100%;
+      padding: 0px 5px;
+      .logo-footer {
+        display: none;
+        img {
+        }
+      }
+      .contact-footer {
+        width: 100%;
+        p {
+          font-size: 0.7rem;
         }
       }
       .social-media {
