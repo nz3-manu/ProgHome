@@ -168,6 +168,7 @@ article.information {
 
         li{
           .article-accordion {
+            height: auto;
             .plus.open{
             }
               .plus {
@@ -194,6 +195,72 @@ article.information {
       }
   }
 
+}
+/******************** Media Queris ********************/
+/*------------------ device 480 px ------------------*/
+/*****************************************************/
+@media screen and (max-width:480px) {
+  article.information {
+    .last-section {
+      padding: 0px 5px;
+      .lastInformation {
+        width: 100%;
+        display: none;
+        .firtsInformation, .secondnformation, .thirdInformation {
+          width: 42%;
+          font-size: 0.6rem;
+          .btnHighPlace {
+            top: 230px;
+            &:hover {
+            }
+            p {
+
+            }
+            a {
+            }
+          }
+          span.title {
+
+          }
+          span.bold {
+
+          }
+        }
+        .secondnformation {
+          margin: 0px 22px 0px 19px;
+          padding-left: 11px;
+        }
+      }
+        .listItems {
+        width: 100%;
+        padding: 10px 0px;
+        li{
+          .article-accordion {
+            .plus.open{
+            }
+              .plus {
+                &:hover{
+                }
+                }
+                p{
+
+                }
+              }
+            }
+            .submenu {
+              display: none;
+              li{
+                &:hover{
+
+                }
+              }
+            }
+            }
+          .lastLi {
+
+          }
+      }
+  }
 }
 /******************** Media Queris ********************/
 /*------------------ device 360 px ------------------*/

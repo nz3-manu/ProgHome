@@ -42,6 +42,9 @@ header.main-menu {
                 padding: 20px;
               }
            }
+           .last-li{
+             border-right: none;
+           }
         }
     }
 }
@@ -52,7 +55,7 @@ header.main-menu {
 @media screen and (max-width:1000px) {
     header.main-menu {
       nav.menu {
-        width: 748px;
+        width: 100%;
         .rightNav {
         display: none;
         }
@@ -83,6 +86,82 @@ header.main-menu {
         }
     }
   }
+  /******************** Media Queris ********************/
+  /*------------------ device 747 px ------------------*/
+  /*****************************************************/
+  @media screen and (max-width:747px){
+    header.main-menu {
+      nav.menu {
+        .rightNav {
+        display: none;
+        }
+          ul.wrap-li {
+            width: 100%;
+            float: none;
+            background-color:$colorPrimario;
+            padding: 0px;
+            margin: 0px;
+
+              li {
+                width: 20%;
+                float:left;
+                padding: 0.1em 1em;
+                border-right: 1px solid $colorTextoBotones;
+                  a {
+                    text-decoration: none;
+                    color:$colorTextoBotones;
+                    line-height: 30px;
+                    &:hover{
+                      color: #C7CBDB;
+                    }
+                  }
+                  span {
+                    display: none;
+                  }
+               }
+            }
+        }
+    }
+
+  }
+    /******************** Media Queris ********************/
+    /*------------------ device 480 px ------------------*/
+    /*****************************************************/
+    @media screen and (max-width:480px) {
+        header.main-menu {
+          nav.menu {
+            width: 100%;
+            padding: 0px 1px;
+            .rightNav {
+            display: none;
+            }
+              ul.wrap-li {
+                width: 100%;
+                float: none;
+                background-color:$colorPrimario;
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+
+                  li {
+                    float:none;
+                    padding: 0px;
+                    border-bottom: 1px solid $colorTextoBotones;
+
+                      a {
+                        text-decoration: none;
+                        color:$colorTextoBotones;
+                        line-height: 23px;
+
+                      }
+                      span {
+                        padding: 15px;
+                      }
+                   }
+                }
+            }
+        }
+      }
 
   /******************** Media Queris ********************/
   /*------------------ device 360 px ------------------*/

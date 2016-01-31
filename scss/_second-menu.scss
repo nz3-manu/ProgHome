@@ -187,6 +187,136 @@ nav.seconMenu {
       }
     }
   }
+  /******************** Media Queris ********************/
+  /*------------------ device 747 px ------------------*/
+  /*****************************************************/
+  @media screen and (max-width:747px) {
+    nav.seconMenu {
+      width: 100%;
+      .proName {
+      width: 100%;
+      .btn {
+        &:hover {
+        }
+        a {
+        }
+      }
+      .contacInfor {
+        padding: 14px 24px 0px 24px;
+        .program {
+          width: 53%;
+          p {
+            }
+          }
+         }
+         .searchInfor {
+          width: 171px;
+          input {
+           }
+           .btnSearch {
+             &:hover{
+
+             }
+             a {
+
+             }
+           }
+         }
+        }
+    }
+    // NOTE: parte alta
+    .highPlace {
+      width: 100%;
+      baner.bannerContainer {
+
+          .banner1, .banner2, .banner3, .banner4, .banner5, .banner6 {
+            padding: 12px 15px;
+        }
+      }
+      .seconHigh {
+
+        img {
+          max-width: 100%;
+        }
+        .btnHighPlace {
+
+          &:hover {
+
+          }
+          a {
+
+          }
+        }
+      }
+    }
+  }
+  /******************** Media Queris ********************/
+  /*------------------ device 480 px ------------------*/
+  /*****************************************************/
+
+@media screen and (max-width:480px) {
+  nav.seconMenu {
+    width: 100%;
+    .proName {
+    width: 100%;
+    .btn {
+      display: none;
+      &:hover {
+      }
+      a {
+      }
+    }
+    .contacInfor {
+      padding: 1px 2px 0px 2px;
+      .program {
+        width: 53%;
+        p {
+          font-size: 1.3rem;
+          }
+        }
+       }
+       .searchInfor {
+        display: none;
+        input {
+         }
+         .btnSearch {
+           &:hover{
+
+           }
+           a {
+
+           }
+         }
+       }
+      }
+  }
+  // NOTE: parte alta
+  .highPlace {
+    width: 100%;
+    padding: 10px 5px 0px;
+    baner.bannerContainer {
+      width: 100%;
+        .banner1, .banner2, .banner3, .banner4, .banner5, .banner6 {
+          padding: 12px 15px;
+      }
+    }
+    .seconHigh {
+
+      img {
+        display: none;
+      }
+      .btnHighPlace {
+
+        &:hover {
+
+        }
+        a {
+
+        }
+      }
+    }
+  }
+}
 
   /******************** Media Queris ********************/
   /*------------------ device 360 px ------------------*/
@@ -254,6 +384,4 @@ nav.seconMenu {
       }
     }
   }
-
-
 }
