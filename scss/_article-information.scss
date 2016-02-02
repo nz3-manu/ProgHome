@@ -1,4 +1,6 @@
 // ************** Article *******************************
+
+
 article.information {
   width: 100%;
   .last-section {
@@ -8,6 +10,7 @@ article.information {
     display: flex;
     background-color: $colorFondo;
     padding: 0px $padding-width;
+
     .lastInformation {
       width: 75%;
       height: 300px;
@@ -61,6 +64,7 @@ article.information {
         border-left: 1px dotted $colorPrimario
       }
     }
+   // ------------------ Menu en acordion -----------------------
       .listItems {
       width: 24%;
       height: 297px;
@@ -137,7 +141,9 @@ article.information {
     .last-section {
       width: 100%;
       height: auto;
+      flex-wrap: wrap;
       .lastInformation {
+        width: 100%;
         .firtsInformation, .secondnformation, .thirdInformation {
           width: 30%;
           font-size: 0.7rem;
@@ -164,9 +170,10 @@ article.information {
         }
       }
         .listItems {
-
+          width: 50%;
         li{
           .article-accordion {
+            text-align: center;
             height: auto;
             .plus.open{
             }
@@ -194,6 +201,72 @@ article.information {
       }
   }
 
+}
+/******************** Media Queris ********************/
+/*------------------ device 677 px ------------------*/
+/*****************************************************/
+@media screen and (max-width:677px) {
+  article.information {
+    .last-section {
+      padding: 0px 5px;
+      .lastInformation {
+        width: 100%;
+
+        .firtsInformation, .secondnformation, .thirdInformation {
+          width: 42%;
+          font-size: 0.6rem;
+          .btnHighPlace {
+            top: 230px;
+            &:hover {
+            }
+            p {
+
+            }
+            a {
+            }
+          }
+          span.title {
+
+          }
+          span.bold {
+
+          }
+        }
+        .secondnformation {
+          margin: 0px 22px 0px 19px;
+          padding-left: 11px;
+        }
+      }
+        .listItems {
+        width: 100%;
+        padding: 10px 0px;
+        li{
+          .article-accordion {
+            .plus.open{
+            }
+              .plus {
+                &:hover{
+                }
+                }
+                p{
+
+                }
+              }
+            }
+            .submenu {
+              display: none;
+              li{
+                &:hover{
+
+                }
+              }
+            }
+            }
+          .lastLi {
+
+          }
+      }
+  }
 }
 /******************** Media Queris ********************/
 /*------------------ device 480 px ------------------*/
