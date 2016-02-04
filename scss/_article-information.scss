@@ -1,67 +1,50 @@
 // ************** Article *******************************
-
-
 article.information {
   width: 100%;
   .last-section {
     width:$sizeWeb;
     height: 380px;
-    margin: auto;
     display: flex;
+    margin: auto;
     background-color: $colorFondo;
     padding: 0px $padding-width;
 
     .lastInformation {
       width: 75%;
       height: 300px;
+      display: flex;
+      justify-content: space-between;
       border: 3px solid $colorPrimario;
       border-radius: 15px 0px 15px 0px;
-      display: flex;
       margin-right: 1%;
       padding: 12px;
       .firtsInformation, .secondnformation, .thirdInformation {
-        font-size: 0.8rem;
         width: 24%;
-        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
         text-align: justify;
         color: $colorPrimario;
+          span.title {
+            font-size: 1.4rem;
+            color: $colorPrimario;
+          }
+          span.bold {
+            font-weight: bold;
+          }
 
-        .btnHighPlace {
-          width: 120PX;
-          height: 30px;
-          background-color: $colorBotones;
-          position: absolute;
-          text-align: center;
-          padding-top: 2px;
-          border: 1px solid $colorTextoBotones;
-          top: 230px;
-          right: 1px;
-          &:hover {
-            background:radial-gradient(circle,#D16060,#D16060,#C25050);
-          }
-          p {
-            margin: 0px;
-            padding: 5px 10px;
-          }
-          a {
-            text-decoration: none;
-            color:$colorTextoBotones;
+        .container-btn {
+          @extend .container-btn;
+          background-color: #F6F3E7;
+          border-top: none;
+          margin: auto;
+          .readMore--btn {
+            &:hover{}
+            p{}
+            a{}
           }
         }
-        span.title {
-          font-size: 1.4rem;
-          color: $colorPrimario;
-        }
-        span.bold {
-          font-weight: bold;
-        }
-      }
-      .secondnformation {
-        @extend .firtsInformation;
-        width: 30%;
-        margin: 0px 80px 0px 40px;
-        padding-left: 40px;
-        border-left: 1px dotted $colorPrimario
       }
     }
    // ------------------ Menu en acordion -----------------------

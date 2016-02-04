@@ -1,11 +1,11 @@
-.middle {    /// padre
+.father-container {    /// padre
   width: 23%;
   height: 250px;
   margin-right: 2%;
   display: flex;
   flex-direction: column;
 
-  .imgMiddle {    ///container 1
+  .img-top {
     width: 100%;
     height: 100px;
     background-color: #EFD2AB;
@@ -14,7 +14,7 @@
         max-height: 100px;
       }
     }
-    .withinMiddle{  ///container 2
+    .text--middle {
       width: 100%;
       height: 100px;
       color:$colorPrimario;
@@ -22,22 +22,22 @@
       p.text {
         margin: 0px;
         padding: 5px 10px;
-
       }
     }
-    .cbBtnHighPlace {              ///container 3
+    .container-btn {
       width: 100%;
       height: 50px;
+      display: flex;
+      justify-content: flex-end;
       padding-top: 3px;
       border-top: 1px solid $colorTextoBotones;
       border-bottom-right-radius: 10px;
       background-color: #EFD2AB;
-      .btnHighPlace {
+      .readMore--btn {
         width: 120PX;
         height: 30px;
         background-color: $colorBotones;
         text-align: center;
-        float: right;
         padding-top: 2px;
         border: 1px solid $colorTextoBotones;
         &:hover {
@@ -53,5 +53,33 @@
         }
       }
     }
+  }
+  // NOTE: Solo el boton
 
+  .container-btn {
+    width: 100%;
+    height: 50px;
+    padding-top: 3px;
+    border-top: 1px solid $colorTextoBotones;
+    border-bottom-right-radius: 10px;
+    background-color: #EFD2AB;
+    .readMore--btn {
+      width: 120PX;
+      height: 30px;
+      background-color: $colorBotones;
+      text-align: center;
+      padding-top: 2px;
+      border: 1px solid $colorTextoBotones;
+      &:hover {
+        background:radial-gradient(circle,#D16060,#D16060,#C25050);
+      }
+      p {
+        margin: 0px;
+        padding: 5px 10px;
+      }
+      a {
+        text-decoration: none;
+        color:$colorTextoBotones;
+      }
+    }
   }

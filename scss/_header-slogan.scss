@@ -120,14 +120,15 @@ header.slogan {
   /******************** Media Queris ********************/
   /*------------------ device 480 px ------------------*/
   /*****************************************************/
-  @media screen and (max-width:480px) {
+  @media screen and (max-width:600px) {
     header.slogan {
-
+      display: none;
       .lowHeader {
         height: auto;
         .slogan {
           width: 25%;
           .logo {
+            display: none;
             width: 50px;
             img{
               max-width: 50px;
