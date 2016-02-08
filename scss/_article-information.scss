@@ -18,6 +18,7 @@ article.information {
       border-radius: 15px 0px 15px 0px;
       margin-right: 1%;
       padding: 12px;
+
       .firtsInformation, .secondnformation, .thirdInformation {
         width: 24%;
         height: auto;
@@ -26,6 +27,7 @@ article.information {
         font-size: 0.8rem;
         text-align: justify;
         color: $colorPrimario;
+
           span.title {
             font-size: 1.4rem;
             color: $colorPrimario;
@@ -34,17 +36,6 @@ article.information {
             font-weight: bold;
           }
 
-        .container-btn {
-          @extend .container-btn;
-          background-color: #F6F3E7;
-          border-top: none;
-          margin: auto;
-          .readMore--btn {
-            &:hover{}
-            p{}
-            a{}
-          }
-        }
       }
     }
    // ------------------ Menu en acordion -----------------------

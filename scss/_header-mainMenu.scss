@@ -2,15 +2,18 @@
 .clearFixed {
   overflow: hidden;
 }
-header.main-menu {
-  background-color:$colorPrimario;
-  width: 100%;
-  nav.menu {
-    width: $sizeWeb;
-    margin: auto;
-    padding: 0px $padding-width;
-    display: flex;
-    flex-direction: row-reverse;
+.main-menu {
+        background-color:$colorPrimario;
+        width: 100%;
+        .menu_bar{
+          display: none;
+        }
+        .menu {
+                width: $sizeWeb;
+                margin: auto;
+                padding: 0px $padding-width;
+                display: flex;
+                flex-direction: row-reverse;
     .rightNav {
       width: 25%;
       height: 33px;
@@ -18,7 +21,7 @@ header.main-menu {
       margin-right: 5px;
 
     }
-      ul.wrap-li {
+      .wrap-li {
         width: 75%;
         display: flex;
         justify-content: space-between;
@@ -26,6 +29,7 @@ header.main-menu {
         background-color:$colorPrimario;
         padding: 0px;
         margin: 0px;
+        z-index: 1000;
 
           li {
             width: auto;
@@ -62,13 +66,17 @@ header.main-menu {
 /*****************************************************/
 
 @media screen and (max-width:1000px) {
-    header.main-menu {
-      nav.menu {
+    .main-menu {
+      .menu {
         width: 100%;
-        .rightNav {
-        display: none;
+        .menu_bar{
+          width: 100%;
+          display: block;
         }
-          ul.wrap-li {
+        .rightNav {
+         display: none;
+        }
+          .wrap-li {
             width: 100%;
             background-color:$colorPrimario;
             padding: 0px;
@@ -96,21 +104,102 @@ header.main-menu {
   /******************** Media Queris ********************/
   /*------------------ device 600 px ------------------*/
   /*****************************************************/
-  @media screen and (max-width: 623px) {
-    header.main-menu {
-      nav.menu {
-        width: 100%;
+  @media screen and (max-width: 619px) {
+    .main-menu {
+      height: 80px;
+      background-color: $colorFondo;
+        .menu_bar {
+          width: 100%;
+          display: block;
+            .btn-menu{
+              display: block;
+              padding: 20px;
+              color: #fff;
+              overflow: hidden;
+              font-size: 25px;
+              font-weight: bold;
+              text-decoration: none;
+              background-color: $colorPrimario;
+                span{
+                float: right;
+                font-size: 40px;
+                }
+              }
+            }
+      .menu {
+        width: 70%;
+        padding: 0px;
+        margin-left: 0px;
+        flex-direction: column-reverse;
         .rightNav {
-        display: none;
+        }
+          .wrap-li {
+            width: 70%;
+            flex-direction: column;
+            text-align: center;
+            background-color: #272C2F;
+            position: relative;
+            z-index: 1000;
+            left: -100%;
+              li {
+                  display: block;
+                  a {
+                    text-decoration: none;
+                    color:$colorTextoBotones;
+                    line-height: 30px;
+                    &:hover{
+                      color: #C7CBDB;
+                    }
+                  }
+                  span {
+                    padding-right: 0.5em;
+                  }
+               }
+               .last-li{
+                 border-bottom: none;
+                 a {
+                   img{ }
+                 }
+               }
+            }
+        }
+    }
+  }
+  /******************** Media Queris ********************/
+  /*------------------ device 350 px ------------------*/
+  /*****************************************************/
+  @media screen and (max-width: 350px){
+    .main-menu {
+        .menu_bar{
+          width: 100%;
+          display: block;
+            .btn-menu{
+              display: block;
+              padding: 20px;
+              color: #fff;
+              overflow: hidden;
+              font-size: 25px;
+              font-weight: bold;
+              text-decoration: none;
+                span{
+                float: right;
+                font-size: 40px;
+                }
+              }
+            }
+      nav.menu {
+        width: 80%;
+        padding: 0px;
+        .rightNav {
         }
           ul.wrap-li {
             flex-direction: column;
-            text-align: center;
-
+            text-align: left;
+            position: relative;
+            z-index: 1000;
+            left: -100%;
               li {
-                padding-right: none;
-                border-right: none;
-                border-bottom: 1px solid $colorTextoBotones;
+                  display: block;
                   a {
                     text-decoration: none;
                     color:$colorTextoBotones;
